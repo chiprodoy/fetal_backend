@@ -46,6 +46,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::prefix('kehamilan')->group(function(){
+    /**
+     * Display Kehamilan
+     *
+     * Check that the service is up. If everything is okay, you'll get a 200 OK response.
+     *
+     * Otherwise, the request will fail with a 400 error, and a response listing the failed services.
+     **/
+    Route::get('kehamilan',[KehamilanController::class,'index'])->name('kehamilan.index');
 
-Route::resource('/kehamilan',KehamilanController::class);
-
+});
