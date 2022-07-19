@@ -17,3 +17,9 @@ class Post extends Model
         return $this->belongsToMany(PostCategory::class);
     }
 }
+
+class PostStatus{
+    const PUBLISH='publish';
+    const DRAFT='draft';
+
+}

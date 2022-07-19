@@ -9,6 +9,8 @@ use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
+use App\Http\Controllers\PostCategoryController;
+use App\Http\Controllers\PostController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -46,14 +48,20 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix('kehamilan')->group(function(){
-    /**
-     * Display Kehamilan
-     *
-     * Check that the service is up. If everything is okay, you'll get a 200 OK response.
-     *
-     * Otherwise, the request will fail with a 400 error, and a response listing the failed services.
-     **/
-    Route::get('kehamilan',[KehamilanController::class,'index'])->name('kehamilan.index');
+Route::prefix('post')->group(function(){
+
+    Route::get('/',[PostController::class,'index'])->name('post.index');
+
+    Route::get('/category/{slug}',[PostController::class,'indexByCategory'])->name('post.category');
+
+
+
+});
+Route::prefix('post_category')->group(function(){
+    Route::get('/',[PostCategoryController::class,'index'])->name('post_category.index');
+
+
+
+
 
 });

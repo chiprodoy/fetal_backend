@@ -2,18 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
+use App\Models\PostCategory;
 use Illuminate\Http\Request;
 use MF\Controllers\ApiResponse;
 use MF\Controllers\ControllerResources;
 
-class PostController extends Controller
+class PostCategoryController extends Controller
 {
-    use ApiResponse;
-    use ControllerResources{
-        ControllerResources::__construct as private __ctrlResConstruct;}
+      use ApiResponse,ControllerResources{
+        ControllerResources::__construct as private __ctrlResConstruct;
+        ControllerResources::index as private __index;
+    }
 
-    public $namaModel=Post::class;
+    public $namaModel=PostCategory::class;
     public $title="Post";
     public $controllerName='post';
 
@@ -25,21 +26,15 @@ class PostController extends Controller
         $this->saveAction=route('kehamilan.store');
         $this->readAction=route('kehamilan.index');
     }
-
-       /**
-     * Show all POST by kategori
+    /**
+     * Display All Cateogory POST
      *
      * Check that the service is up. If everything is okay, you'll get a 200 OK response.
      *
      * Otherwise, the request will fail with a 400 error, and a response listing the failed services.
      **/
-    public function indexByCategory($slug){
-        $pc=Post::with(['categories'=>function($query)use($slug){
-            $query->where('slugs','=',$slug);
-
-        }]);
-
-        if($pc->count())  return $this->success($pc->get(),'Berhasil');
-        else return response()->noContent();
+    public function index(){
+        return $this->__index();
     }
+
 }
