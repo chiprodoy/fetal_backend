@@ -90,10 +90,16 @@
                         <a href="#endpoints-GETapi-user">Register</a>
                     </li>
                                     <li class="tocify-item level-2" data-unique="endpoints-GETapi-post_category">
-                        <a href="#endpoints-GETapi-post_category">Display a listing of the resource.</a>
+                        <a href="#endpoints-GETapi-post_category">Display All Cateogory POST</a>
                     </li>
-                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-post_category--slug-">
-                        <a href="#endpoints-GETapi-post_category--slug-">GET api/post_category/{slug}</a>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-post">
+                        <a href="#endpoints-GETapi-post">Display a listing of the resource.</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-post-category--slug-">
+                        <a href="#endpoints-GETapi-post-category--slug-">Show all POST by kategori</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-post--slug-">
+                        <a href="#endpoints-GETapi-post--slug-">Show a POST by slug</a>
                     </li>
                                                     </ul>
                             </ul>
@@ -107,7 +113,7 @@
                             <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
                     </ul>
         <ul class="toc-footer" id="last-updated">
-        <li>Last updated: July 17 2022</li>
+        <li>Last updated: July 20 2022</li>
     </ul>
 </div>
 
@@ -147,14 +153,14 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"cxngnenovbyzkxcdrfpqeoxkiplfbcfbkepzxcafgkdieriqiccnmgibrlw\",
-    \"email\": \"efrvoccfobglxmnlhpyvkheisxmhefetgwrrbypkdhjltescdlpammamptcpyhnqiavxecmjwjxmojuszaixrlwwqqfshwszcebqjogbszbymjkijqsryawjshaflpsnrcymuyqflwersjkhnmseataorlnyejonambghalgngqdwliyikcybmtgsc\",
-    \"password\": \"suscipit\",
-    \"tempat_lahir\": \"et\",
-    \"tgl_lahir\": \"2022-07-17T11:55:15\",
-    \"pekerjaan\": \"tenetur\",
-    \"pendidikan\": \"quo\",
-    \"jumlah_anak\": 3745577.3440122
+    \"name\": \"yrtntgpcsdzdjmqjsbizzfljqqrpflpbweylltelrayqyvgcctfmvtzvlaiworjoujqvdoybksyzfponpeznmqnmhbfdljbtdzbavtcyfopjqpmetcokavmbpobaqyybqymqdeosowywifrbfdcoprlyhrbpslbgxujhxcixvhhcgopcmoxuzjvbophwndcpzqwdwmdzrpwnpgmfyevbetbaphnloaqeyzquopxrxoxjtxpwzvibabape\",
+    \"email\": \"lmrlhabfayawqs\",
+    \"password\": \"qui\",
+    \"tempat_lahir\": \"debitis\",
+    \"tgl_lahir\": \"2022-07-20T00:53:35\",
+    \"pekerjaan\": \"ipsa\",
+    \"pendidikan\": \"placeat\",
+    \"jumlah_anak\": 24336269.868095625
 }"
 </code></pre></div>
 
@@ -170,14 +176,14 @@ const headers = {
 };
 
 let body = {
-    "name": "cxngnenovbyzkxcdrfpqeoxkiplfbcfbkepzxcafgkdieriqiccnmgibrlw",
-    "email": "efrvoccfobglxmnlhpyvkheisxmhefetgwrrbypkdhjltescdlpammamptcpyhnqiavxecmjwjxmojuszaixrlwwqqfshwszcebqjogbszbymjkijqsryawjshaflpsnrcymuyqflwersjkhnmseataorlnyejonambghalgngqdwliyikcybmtgsc",
-    "password": "suscipit",
-    "tempat_lahir": "et",
-    "tgl_lahir": "2022-07-17T11:55:15",
-    "pekerjaan": "tenetur",
-    "pendidikan": "quo",
-    "jumlah_anak": 3745577.3440122
+    "name": "yrtntgpcsdzdjmqjsbizzfljqqrpflpbweylltelrayqyvgcctfmvtzvlaiworjoujqvdoybksyzfponpeznmqnmhbfdljbtdzbavtcyfopjqpmetcokavmbpobaqyybqymqdeosowywifrbfdcoprlyhrbpslbgxujhxcixvhhcgopcmoxuzjvbophwndcpzqwdwmdzrpwnpgmfyevbetbaphnloaqeyzquopxrxoxjtxpwzvibabape",
+    "email": "lmrlhabfayawqs",
+    "password": "qui",
+    "tempat_lahir": "debitis",
+    "tgl_lahir": "2022-07-20T00:53:35",
+    "pekerjaan": "ipsa",
+    "pendidikan": "placeat",
+    "jumlah_anak": 24336269.868095625
 };
 
 fetch(url, {
@@ -235,7 +241,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-register"
-               value="cxngnenovbyzkxcdrfpqeoxkiplfbcfbkepzxcafgkdieriqiccnmgibrlw"
+               value="yrtntgpcsdzdjmqjsbizzfljqqrpflpbweylltelrayqyvgcctfmvtzvlaiworjoujqvdoybksyzfponpeznmqnmhbfdljbtdzbavtcyfopjqpmetcokavmbpobaqyybqymqdeosowywifrbfdcoprlyhrbpslbgxujhxcixvhhcgopcmoxuzjvbophwndcpzqwdwmdzrpwnpgmfyevbetbaphnloaqeyzquopxrxoxjtxpwzvibabape"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255 characters.</p>
@@ -245,7 +251,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-register"
-               value="efrvoccfobglxmnlhpyvkheisxmhefetgwrrbypkdhjltescdlpammamptcpyhnqiavxecmjwjxmojuszaixrlwwqqfshwszcebqjogbszbymjkijqsryawjshaflpsnrcymuyqflwersjkhnmseataorlnyejonambghalgngqdwliyikcybmtgsc"
+               value="lmrlhabfayawqs"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -255,7 +261,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-register"
-               value="suscipit"
+               value="qui"
                data-component="body" hidden>
     <br>
 
@@ -265,7 +271,7 @@ fetch(url, {
                 <input type="text"
                name="tempat_lahir"
                data-endpoint="POSTapi-register"
-               value="et"
+               value="debitis"
                data-component="body" hidden>
     <br>
 
@@ -275,7 +281,7 @@ fetch(url, {
                 <input type="text"
                name="tgl_lahir"
                data-endpoint="POSTapi-register"
-               value="2022-07-17T11:55:15"
+               value="2022-07-20T00:53:35"
                data-component="body" hidden>
     <br>
 <p>Must be a valid date.</p>
@@ -285,7 +291,7 @@ fetch(url, {
                 <input type="text"
                name="pekerjaan"
                data-endpoint="POSTapi-register"
-               value="tenetur"
+               value="ipsa"
                data-component="body" hidden>
     <br>
 
@@ -295,7 +301,7 @@ fetch(url, {
                 <input type="text"
                name="pendidikan"
                data-endpoint="POSTapi-register"
-               value="quo"
+               value="placeat"
                data-component="body" hidden>
     <br>
 
@@ -305,7 +311,7 @@ fetch(url, {
                 <input type="number"
                name="jumlah_anak"
                data-endpoint="POSTapi-register"
-               value="3745577.3440122"
+               value="24336269.868096"
                data-component="body" hidden>
     <br>
 
@@ -329,8 +335,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"doloribus\",
-    \"password\": \"repellendus\"
+    \"email\": \"quae\",
+    \"password\": \"eligendi\"
 }"
 </code></pre></div>
 
@@ -346,8 +352,8 @@ const headers = {
 };
 
 let body = {
-    "email": "doloribus",
-    "password": "repellendus"
+    "email": "quae",
+    "password": "eligendi"
 };
 
 fetch(url, {
@@ -405,7 +411,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-login"
-               value="doloribus"
+               value="quae"
                data-component="body" hidden>
     <br>
 
@@ -415,7 +421,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-login"
-               value="repellendus"
+               value="eligendi"
                data-component="body" hidden>
     <br>
 
@@ -439,7 +445,7 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"afarrell@example.org\"
+    \"email\": \"myrtis36@example.org\"
 }"
 </code></pre></div>
 
@@ -455,7 +461,7 @@ const headers = {
 };
 
 let body = {
-    "email": "afarrell@example.org"
+    "email": "myrtis36@example.org"
 };
 
 fetch(url, {
@@ -513,7 +519,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-forgot-password"
-               value="afarrell@example.org"
+               value="myrtis36@example.org"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -537,9 +543,9 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"token\": \"voluptas\",
-    \"email\": \"linwood03@example.com\",
-    \"password\": \"eaque\"
+    \"token\": \"in\",
+    \"email\": \"jaylon82@example.net\",
+    \"password\": \"excepturi\"
 }"
 </code></pre></div>
 
@@ -555,9 +561,9 @@ const headers = {
 };
 
 let body = {
-    "token": "voluptas",
-    "email": "linwood03@example.com",
-    "password": "eaque"
+    "token": "in",
+    "email": "jaylon82@example.net",
+    "password": "excepturi"
 };
 
 fetch(url, {
@@ -615,7 +621,7 @@ fetch(url, {
                 <input type="text"
                name="token"
                data-endpoint="POSTapi-reset-password"
-               value="voluptas"
+               value="in"
                data-component="body" hidden>
     <br>
 
@@ -625,7 +631,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-reset-password"
-               value="linwood03@example.com"
+               value="jaylon82@example.net"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -635,7 +641,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-reset-password"
-               value="eaque"
+               value="excepturi"
                data-component="body" hidden>
     <br>
 
@@ -738,12 +744,13 @@ access-control-allow-origin: *
         </p>
                     </form>
 
-            <h2 id="endpoints-GETapi-post_category">Display a listing of the resource.</h2>
+            <h2 id="endpoints-GETapi-post_category">Display All Cateogory POST</h2>
 
 <p>
 </p>
 
-
+<p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
+<p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
 
 <span id="example-requests-GETapi-post_category">
 <blockquote>Example request:</blockquote>
@@ -775,7 +782,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-post_category">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (500):</p>
         </blockquote>
                 <details class="annotation">
             <summary>
@@ -784,48 +791,459 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 59
+x-ratelimit-remaining: 52
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
 
 <code class="language-json">{
-    &quot;response&quot;: {
-        &quot;total_record&quot;: 3,
-        &quot;list&quot;: [
-            {
-                &quot;id&quot;: 3,
-                &quot;name&quot;: &quot;HPHT&quot;,
-                &quot;slugs&quot;: &quot;hpht&quot;,
-                &quot;created_at&quot;: &quot;2022-07-17T02:31:44.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2022-07-17T02:31:44.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 2,
-                &quot;name&quot;: &quot;Perkembangan Janin&quot;,
-                &quot;slugs&quot;: &quot;perkembangan-janin&quot;,
-                &quot;created_at&quot;: &quot;2022-07-17T02:31:44.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2022-07-17T02:31:44.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            },
-            {
-                &quot;id&quot;: 1,
-                &quot;name&quot;: &quot;Edukasi&quot;,
-                &quot;slugs&quot;: &quot;edukasi&quot;,
-                &quot;created_at&quot;: &quot;2022-07-17T02:31:44.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2022-07-17T02:31:44.000000Z&quot;,
-                &quot;deleted_at&quot;: null
-            }
-        ],
-        &quot;page&quot;: 1,
-        &quot;limit&quot;: 100,
-        &quot;total_page&quot;: 1,
-        &quot;metadata&quot;: {
-            &quot;message&quot;: &quot;ok&quot;,
-            &quot;code&quot;: 200
+    &quot;message&quot;: &quot;Too few arguments to function App\\Http\\Controllers\\PostCategoryController::index(), 0 passed in D:\\~projects\\htdocs\\fetal\\backend\\app\\Http\\Controllers\\PostCategoryController.php on line 37 and exactly 1 expected&quot;,
+    &quot;exception&quot;: &quot;ArgumentCountError&quot;,
+    &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\MF\\ControllerResources.php&quot;,
+    &quot;line&quot;: 100,
+    &quot;trace&quot;: [
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\app\\Http\\Controllers\\PostCategoryController.php&quot;,
+            &quot;line&quot;: 37,
+            &quot;function&quot;: &quot;__index&quot;,
+            &quot;class&quot;: &quot;App\\Http\\Controllers\\PostCategoryController&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php&quot;,
+            &quot;line&quot;: 54,
+            &quot;function&quot;: &quot;index&quot;,
+            &quot;class&quot;: &quot;App\\Http\\Controllers\\PostCategoryController&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php&quot;,
+            &quot;line&quot;: 45,
+            &quot;function&quot;: &quot;callAction&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Controller&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php&quot;,
+            &quot;line&quot;: 262,
+            &quot;function&quot;: &quot;dispatch&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\ControllerDispatcher&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php&quot;,
+            &quot;line&quot;: 205,
+            &quot;function&quot;: &quot;runController&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Route&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
+            &quot;line&quot;: 721,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Route&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 128,
+            &quot;function&quot;: &quot;Illuminate\\Routing\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php&quot;,
+            &quot;line&quot;: 50,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\SubstituteBindings&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
+            &quot;line&quot;: 127,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
+            &quot;line&quot;: 103,
+            &quot;function&quot;: &quot;handleRequest&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php&quot;,
+            &quot;line&quot;: 55,
+            &quot;function&quot;: &quot;handleRequestUsingNamedLimiter&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 103,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
+            &quot;line&quot;: 723,
+            &quot;function&quot;: &quot;then&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
+            &quot;line&quot;: 698,
+            &quot;function&quot;: &quot;runRouteWithinStack&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
+            &quot;line&quot;: 662,
+            &quot;function&quot;: &quot;runRoute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php&quot;,
+            &quot;line&quot;: 651,
+            &quot;function&quot;: &quot;dispatchToRoute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;dispatch&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 128,
+            &quot;function&quot;: &quot;Illuminate\\Foundation\\Http\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php&quot;,
+            &quot;line&quot;: 21,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php&quot;,
+            &quot;line&quot;: 31,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php&quot;,
+            &quot;line&quot;: 21,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php&quot;,
+            &quot;line&quot;: 40,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TrimStrings&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php&quot;,
+            &quot;line&quot;: 27,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php&quot;,
+            &quot;line&quot;: 86,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\fruitcake\\laravel-cors\\src\\HandleCors.php&quot;,
+            &quot;line&quot;: 52,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Fruitcake\\Cors\\HandleCors&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php&quot;,
+            &quot;line&quot;: 39,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 167,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\TrustProxies&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php&quot;,
+            &quot;line&quot;: 103,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
+            &quot;line&quot;: 142,
+            &quot;function&quot;: &quot;then&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php&quot;,
+            &quot;line&quot;: 111,
+            &quot;function&quot;: &quot;sendRequestThroughRouter&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;line&quot;: 299,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;line&quot;: 287,
+            &quot;function&quot;: &quot;callLaravelOrLumenRoute&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;line&quot;: 89,
+            &quot;function&quot;: &quot;makeApiCall&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;line&quot;: 45,
+            &quot;function&quot;: &quot;makeResponseCall&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Strategies\\Responses\\ResponseCalls.php&quot;,
+            &quot;line&quot;: 35,
+            &quot;function&quot;: &quot;makeResponseCallIfConditionsPass&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
+            &quot;line&quot;: 222,
+            &quot;function&quot;: &quot;__invoke&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
+            &quot;line&quot;: 179,
+            &quot;function&quot;: &quot;iterateThroughStrategies&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\knuckleswtf\\scribe\\src\\Extracting\\Extractor.php&quot;,
+            &quot;line&quot;: 116,
+            &quot;function&quot;: &quot;fetchResponses&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 123,
+            &quot;function&quot;: &quot;processRoute&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 80,
+            &quot;function&quot;: &quot;extractEndpointsInfoFromLaravelApp&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\knuckleswtf\\scribe\\src\\GroupedEndpoints\\GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 56,
+            &quot;function&quot;: &quot;extractEndpointsInfoAndWriteToDisk&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\knuckleswtf\\scribe\\src\\Commands\\GenerateDocumentation.php&quot;,
+            &quot;line&quot;: 55,
+            &quot;function&quot;: &quot;get&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
+            &quot;line&quot;: 36,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Commands\\GenerateDocumentation&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php&quot;,
+            &quot;line&quot;: 40,
+            &quot;function&quot;: &quot;Illuminate\\Container\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
+            &quot;line&quot;: 93,
+            &quot;function&quot;: &quot;unwrapIfClosure&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\Util&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php&quot;,
+            &quot;line&quot;: 37,
+            &quot;function&quot;: &quot;callBoundMethod&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php&quot;,
+            &quot;line&quot;: 653,
+            &quot;function&quot;: &quot;call&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php&quot;,
+            &quot;line&quot;: 136,
+            &quot;function&quot;: &quot;call&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\Container&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\symfony\\console\\Command\\Command.php&quot;,
+            &quot;line&quot;: 298,
+            &quot;function&quot;: &quot;execute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php&quot;,
+            &quot;line&quot;: 121,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Command\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\symfony\\console\\Application.php&quot;,
+            &quot;line&quot;: 1024,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\symfony\\console\\Application.php&quot;,
+            &quot;line&quot;: 299,
+            &quot;function&quot;: &quot;doRunCommand&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\symfony\\console\\Application.php&quot;,
+            &quot;line&quot;: 171,
+            &quot;function&quot;: &quot;doRun&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php&quot;,
+            &quot;line&quot;: 94,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php&quot;,
+            &quot;line&quot;: 129,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\artisan&quot;,
+            &quot;line&quot;: 37,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Console\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
         }
-    }
+    ]
 }</code>
  </pre>
     </span>
@@ -870,27 +1288,27 @@ access-control-allow-origin: *
         </p>
                     </form>
 
-            <h2 id="endpoints-GETapi-post_category--slug-">GET api/post_category/{slug}</h2>
+            <h2 id="endpoints-GETapi-post">Display a listing of the resource.</h2>
 
 <p>
 </p>
 
 
 
-<span id="example-requests-GETapi-post_category--slug-">
+<span id="example-requests-GETapi-post">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/post_category/fugit" \
+    --get "http://localhost/api/post" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/post_category/fugit"
+    "http://localhost/api/post"
 );
 
 const headers = {
@@ -905,7 +1323,7 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-GETapi-post_category--slug-">
+<span id="example-responses-GETapi-post">
             <blockquote>
             <p>Example response (200):</p>
         </blockquote>
@@ -916,7 +1334,129 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 58
+x-ratelimit-remaining: 55
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">{
+    &quot;response&quot;: {
+        &quot;total_record&quot;: 1,
+        &quot;list&quot;: [
+            {
+                &quot;id&quot;: 1,
+                &quot;title&quot;: &quot;Kehamilan&quot;,
+                &quot;description&quot;: &quot;3\nHome\nKehamilan\nKehamilan: Tanda, Proses Pembuahan, hingga Perkembangan Janin\n\n    DefinisiTanda dan gejalaWaktu periksaProsesPerkembangan janinPeluang kehamilanMengetahui kehamilanPenting dilakukanKomplikasi kehamilanMakanan yang perlu dihindariPengaruh pada kehamilan\n\nKehamilan: Tanda, Proses Pembuahan, hingga Perkembangan Janin\n \n\nHal istimewa yang hanya bisa dialami oleh wanita tetapi tidak pada pria yakni kehamilan. Kehamilan bukanlah proses yang singkat. Butuh waktu dan perjalanan panjang sejak pembuahan, perkembangan bayi di dalam kandungan, hingga nantinya melahirkan.\n \n\nPenting untuk mengetahui semua hal seputar masa kehamilan. Yuk, simak informasinya berikut ini!\n \nApa itu kehamilan?\n \n\nKehamilan adalah proses yang terjadi dari pembuahan sampai kelahiran. \n \n\nProses ini dimulai dari sel telur yang dibuahi oleh sperma, lalu tertanam di dalam lapisan rahim, dan kemudian menjadi janin. &quot;,
+                &quot;multimedia&quot;: null,
+                &quot;tags&quot;: null,
+                &quot;view_count&quot;: null,
+                &quot;post_status&quot;: &quot;publish&quot;,
+                &quot;slug&quot;: &quot;kehamilan&quot;,
+                &quot;created_at&quot;: null,
+                &quot;updated_at&quot;: null,
+                &quot;deleted_at&quot;: null
+            }
+        ],
+        &quot;page&quot;: 1,
+        &quot;limit&quot;: 100,
+        &quot;total_page&quot;: 1,
+        &quot;metadata&quot;: {
+            &quot;message&quot;: &quot;ok&quot;,
+            &quot;code&quot;: 200
+        }
+    }
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-post" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-post"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-post"></code></pre>
+</span>
+<span id="execution-error-GETapi-post" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-post"></code></pre>
+</span>
+<form id="form-GETapi-post" data-method="GET"
+      data-path="api/post"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-post', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-post"
+                    onclick="tryItOut('GETapi-post');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-post"
+                    onclick="cancelTryOut('GETapi-post');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-post" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/post</code></b>
+        </p>
+                    </form>
+
+            <h2 id="endpoints-GETapi-post-category--slug-">Show all POST by kategori</h2>
+
+<p>
+</p>
+
+<p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
+<p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
+
+<span id="example-requests-GETapi-post-category--slug-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/post/category/aliquam" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/post/category/aliquam"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-post-category--slug-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 54
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
@@ -925,56 +1465,176 @@ access-control-allow-origin: *
     &quot;status&quot;: &quot;success&quot;,
     &quot;response_code&quot;: 200,
     &quot;message&quot;: &quot;Berhasil&quot;,
-    &quot;data&quot;: null
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;title&quot;: &quot;Kehamilan&quot;,
+            &quot;description&quot;: &quot;3\nHome\nKehamilan\nKehamilan: Tanda, Proses Pembuahan, hingga Perkembangan Janin\n\n    DefinisiTanda dan gejalaWaktu periksaProsesPerkembangan janinPeluang kehamilanMengetahui kehamilanPenting dilakukanKomplikasi kehamilanMakanan yang perlu dihindariPengaruh pada kehamilan\n\nKehamilan: Tanda, Proses Pembuahan, hingga Perkembangan Janin\n \n\nHal istimewa yang hanya bisa dialami oleh wanita tetapi tidak pada pria yakni kehamilan. Kehamilan bukanlah proses yang singkat. Butuh waktu dan perjalanan panjang sejak pembuahan, perkembangan bayi di dalam kandungan, hingga nantinya melahirkan.\n \n\nPenting untuk mengetahui semua hal seputar masa kehamilan. Yuk, simak informasinya berikut ini!\n \nApa itu kehamilan?\n \n\nKehamilan adalah proses yang terjadi dari pembuahan sampai kelahiran. \n \n\nProses ini dimulai dari sel telur yang dibuahi oleh sperma, lalu tertanam di dalam lapisan rahim, dan kemudian menjadi janin. &quot;,
+            &quot;multimedia&quot;: null,
+            &quot;tags&quot;: null,
+            &quot;view_count&quot;: null,
+            &quot;post_status&quot;: &quot;publish&quot;,
+            &quot;slug&quot;: &quot;kehamilan&quot;,
+            &quot;created_at&quot;: null,
+            &quot;updated_at&quot;: null,
+            &quot;deleted_at&quot;: null,
+            &quot;categories&quot;: []
+        }
+    ]
 }</code>
  </pre>
     </span>
-<span id="execution-results-GETapi-post_category--slug-" hidden>
+<span id="execution-results-GETapi-post-category--slug-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-post_category--slug-"></span>:
+                id="execution-response-status-GETapi-post-category--slug-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-post_category--slug-"></code></pre>
+    <pre class="json"><code id="execution-response-content-GETapi-post-category--slug-"></code></pre>
 </span>
-<span id="execution-error-GETapi-post_category--slug-" hidden>
+<span id="execution-error-GETapi-post-category--slug-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-post_category--slug-"></code></pre>
+    <pre><code id="execution-error-message-GETapi-post-category--slug-"></code></pre>
 </span>
-<form id="form-GETapi-post_category--slug-" data-method="GET"
-      data-path="api/post_category/{slug}"
+<form id="form-GETapi-post-category--slug-" data-method="GET"
+      data-path="api/post/category/{slug}"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-post_category--slug-', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-post-category--slug-', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-post_category--slug-"
-                    onclick="tryItOut('GETapi-post_category--slug-');">Try it out ⚡
+                    id="btn-tryout-GETapi-post-category--slug-"
+                    onclick="tryItOut('GETapi-post-category--slug-');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-post_category--slug-"
-                    onclick="cancelTryOut('GETapi-post_category--slug-');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-post-category--slug-"
+                    onclick="cancelTryOut('GETapi-post-category--slug-');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-post_category--slug-" hidden>Send Request 💥
+                    id="btn-executetryout-GETapi-post-category--slug-" hidden>Send Request 💥
             </button>
             </h3>
             <p>
             <small class="badge badge-green">GET</small>
-            <b><code>api/post_category/{slug}</code></b>
+            <b><code>api/post/category/{slug}</code></b>
         </p>
                     <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
                     <p>
                 <b><code>slug</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
                 <input type="text"
                name="slug"
-               data-endpoint="GETapi-post_category--slug-"
-               value="fugit"
+               data-endpoint="GETapi-post-category--slug-"
+               value="aliquam"
+               data-component="url" hidden>
+    <br>
+
+            </p>
+                    </form>
+
+            <h2 id="endpoints-GETapi-post--slug-">Show a POST by slug</h2>
+
+<p>
+</p>
+
+<p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
+<p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
+
+<span id="example-requests-GETapi-post--slug-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/post/4" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/post/4"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-post--slug-">
+            <blockquote>
+            <p>Example response (204):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 53
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+<code>[Empty response]</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-post--slug-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-post--slug-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-post--slug-"></code></pre>
+</span>
+<span id="execution-error-GETapi-post--slug-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-post--slug-"></code></pre>
+</span>
+<form id="form-GETapi-post--slug-" data-method="GET"
+      data-path="api/post/{slug}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-post--slug-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-post--slug-"
+                    onclick="tryItOut('GETapi-post--slug-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-post--slug-"
+                    onclick="cancelTryOut('GETapi-post--slug-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-post--slug-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/post/{slug}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>slug</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="slug"
+               data-endpoint="GETapi-post--slug-"
+               value="4"
                data-component="url" hidden>
     <br>
 

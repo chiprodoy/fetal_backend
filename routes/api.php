@@ -54,14 +54,11 @@ Route::prefix('post')->group(function(){
 
     Route::get('/category/{slug}',[PostController::class,'indexByCategory'])->name('post.category');
 
+    Route::get('/{slug}',[PostController::class,'show'])->name('post.show');
+
 
 
 });
 Route::prefix('post_category')->group(function(){
     Route::get('/',[PostCategoryController::class,'index'])->name('post_category.index');
-
-
-
-
-
 });

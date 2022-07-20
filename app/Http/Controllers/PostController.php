@@ -42,4 +42,18 @@ class PostController extends Controller
         if($pc->count())  return $this->success($pc->get(),'Berhasil');
         else return response()->noContent();
     }
+
+     /**
+     * Show a POST by slug
+     *
+     * Check that the service is up. If everything is okay, you'll get a 200 OK response.
+     *
+     * Otherwise, the request will fail with a 400 error, and a response listing the failed services.
+     **/
+    public function show($slug){
+        $pc=Post::with('categories')->where('slug',$slug);
+
+        if($pc->count())  return $this->success($pc->get(),'Berhasil');
+        else return response()->noContent();
+    }
 }
