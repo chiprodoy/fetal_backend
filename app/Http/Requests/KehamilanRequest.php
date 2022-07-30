@@ -32,7 +32,7 @@ class KehamilanRequest extends FormRequest
     public function rules()
     {
         return [
-            'uuid'=> ['required','numeric'],
+//            'uuid'=> ['required'],
             'kehamilan_ke' => ['required','numeric'],
             'hari_pertama_haid' => ['required','date'],
         ];

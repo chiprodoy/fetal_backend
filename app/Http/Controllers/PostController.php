@@ -37,7 +37,7 @@ class PostController extends Controller
         $pc=Post::with(['categories'=>function($query)use($slug){
             $query->where('slugs','=',$slug);
 
-        }]);
+        }])->where('post_status','publish');
 
         if($pc->count())  return $this->success($pc->get(),'Berhasil');
         else return response()->noContent();

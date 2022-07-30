@@ -25,7 +25,7 @@ class Post extends Model
      */
     public function getDescriptionAttribute($value)
     {
-        return str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n"),"<br/>",$value);
+        return str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n"),"\n",$value);
     }
 
 }

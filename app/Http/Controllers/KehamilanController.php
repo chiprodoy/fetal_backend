@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\KehamilanRequest;
 use App\Models\Kehamilan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use MF\Controllers\ControllerResources;
 
 class KehamilanController extends Controller
@@ -48,7 +49,15 @@ class KehamilanController extends Controller
      **/
     public function store(KehamilanRequest $request){
         $request->validate();
-
+         // Retrieve a portion of the validated input data...
+        $validated = $request->safe()->only(['kehamilan_ke', 'hari_pertama_haid']);
+        $data=Kehamilan::create([
+            'uuid'=>null,
+            'kehamilan_ke'=>$validated->kehamilan_ke,
+            'hari_pertama_haid'=>$validated->hari_pertama_haid,
+            'usia_kehamilan'=>null,
+            'user_id'=>Auth::user()->id
+        ]);
         if($data->count())  return $this->success($data->get(),'Berhasil');
         else return response()->noContent();
     }
