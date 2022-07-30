@@ -16,6 +16,7 @@ class CreateKehamilansTable extends Migration
     {
         Schema::create('kehamilans', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid');
             $table->integer('kehamilan_ke');
             $table->date('hari_pertama_haid');
             $table->integer('usia_kehamilan');

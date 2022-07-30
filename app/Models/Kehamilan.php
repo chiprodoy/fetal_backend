@@ -4,8 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
-class Kehamilan extends Model
+class Kehamilan extends MainModel
 {
     use HasFactory;
 
@@ -20,6 +21,10 @@ class Kehamilan extends Model
         'usia_kehamilan',
     ];
 
+    public static function searchable(){
+        return [];
+    }
+
     public static function viewable(){
         return [
             ['field'=>'kehamilan_ke','label'=>'Kehamilan Ke'],
@@ -27,12 +32,31 @@ class Kehamilan extends Model
             ['field'=>'usia_kehamilan','label'=>'Usia Kehamilan'],
         ];
     }
+  /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var array<int, string>
+     */
+    protected $hidden = [
+        'id',
+    ];
+
+        /**
+     * Set the uid.
+     *
+     * @param  string  $value
+     * @return void
+     */
+    public function setUuidAttribute($value)
+    {
+        $this->attributes['uuid'] = (string) Str::uuid();
+    }
 
     /**
      * Get the user that owns kehamilan.
      */
     public function user()
     {
-        return $this->belongsTo(User::class, 'foreign_key', 'owner_key');
+        return $this->belongsTo(User::class);
     }
 }

@@ -59,6 +59,20 @@ Route::prefix('post')->group(function(){
 
 
 });
+
+Route::prefix('kehamilan')->group(function(){
+
+    Route::get('/{userUid}',[KehamilanController::class,'index'])->name('kehamilan.index');
+
+    Route::post('/',[KehamilanController::class,'store'])->name('kehamilan.store');
+
+    Route::put('/kehamilan/{uidKehamilan}',[KehamilanController::class,'update'])->name('kehamilan.update');
+
+    Route::delete('/kehamilan/{uidKehamilan}',[KehamilanController::class,'destroy'])->name('kehamilan.destroy');
+
+
+});
+
 Route::prefix('post_category')->group(function(){
     Route::get('/',[PostCategoryController::class,'index'])->name('post_category.index');
 });

@@ -16,6 +16,18 @@ class Post extends Model
     {
         return $this->belongsToMany(PostCategory::class);
     }
+
+        /**
+     * Set the uid.
+     *
+     * @param  string  $value
+     * @return void
+     */
+    public function getDescriptionAttribute($value)
+    {
+        return str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n"),"<br/>",$value);
+    }
+
 }
 
 class PostStatus{

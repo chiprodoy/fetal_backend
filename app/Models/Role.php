@@ -53,3 +53,9 @@ class Role extends Model
         return $this->belongsToMany(Permission::class);
     }
 }
+
+class RoleName{
+    public const SUPERADMIN='Super Admin';
+    public const PENGGUNA='Pengguna';
+
+}
