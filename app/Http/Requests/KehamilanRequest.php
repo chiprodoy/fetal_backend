@@ -15,10 +15,13 @@ class KehamilanRequest extends FormRequest
      */
     public function authorize()
     {
-        $kehamilan=Kehamilan::find($this->route('id'));
 
-        if (($this->method() == 'PUT' || $this->method() == 'DESTROY') && !$this->user()->isRole(RoleName::SUPERADMIN)) {
-          return $this->user()->id==$kehamilan->user_id;
+        if($this->method() == 'POST'){
+            return true;
+        }
+        else if (($this->method() == 'PUT' || $this->method() == 'DESTROY') && !$this->user()->isRole(RoleName::SUPERADMIN)) {
+            $kehamilan=Kehamilan::find($this->route('id'));
+            return $this->user()->id==$kehamilan->user_id;
         }
         return false;
 

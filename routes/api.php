@@ -60,9 +60,9 @@ Route::prefix('post')->group(function(){
 
 });
 
-Route::prefix('kehamilan')->group(function(){
+Route::prefix('kehamilan')->middleware('auth:sanctum')->group(function(){
 
-    Route::get('/{userUid}',[KehamilanController::class,'index'])->name('kehamilan.index');
+    Route::get('/',[KehamilanController::class,'index'])->name('kehamilan.index');
 
     Route::post('/',[KehamilanController::class,'store'])->name('kehamilan.store');
 

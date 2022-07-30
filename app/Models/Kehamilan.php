@@ -10,6 +10,7 @@ class Kehamilan extends MainModel
 {
     use HasFactory;
 
+    protected $appends = ['usia_kehamilan'];
     /**
      * The attributes that are mass assignable.
      *
@@ -18,7 +19,8 @@ class Kehamilan extends MainModel
     protected $fillable = [
         'kehamilan_ke',
         'hari_pertama_haid',
-        'usia_kehamilan',
+        'uuid',
+        'user_id'
     ];
 
     public static function searchable(){
@@ -38,7 +40,7 @@ class Kehamilan extends MainModel
      * @var array<int, string>
      */
     protected $hidden = [
-        'id',
+        'id','user_id'
     ];
 
         /**
@@ -52,6 +54,16 @@ class Kehamilan extends MainModel
         $this->attributes['uuid'] = (string) Str::uuid();
     }
 
+    /**
+     * Get Usia Kehamilan.
+     *
+     * @param  string  $value
+     * @return void
+     */
+    public function getUsiaKehamilanAttribute($value)
+    {
+        return 'xx';
+    }
     /**
      * Get the user that owns kehamilan.
      */

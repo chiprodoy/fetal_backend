@@ -19,7 +19,7 @@ class CreateKehamilansTable extends Migration
             $table->uuid('uuid');
             $table->integer('kehamilan_ke');
             $table->date('hari_pertama_haid');
-            $table->integer('usia_kehamilan');
+          //  $table->integer('usia_kehamilan');
             $table->foreignIdFor(User::class);
             $table->timestamps();
             $table->softDeletes();

@@ -44,10 +44,23 @@ class RegisteredUserController extends Controller
                 'tgl_lahir',
                 'pekerjaan',
                 'pendidikan',
-                'jumlah_anak'
+                'jumlah_anak',
+
         ]);
 
-        $user = User::create($validated);
+        $user = User::create(
+            [
+                'name'=>$validated['name'],
+                'email'=>$validated['email'],
+                'password'=>$validated['password'],
+                'tempat_lahir'=>$validated['tempat_lahir'],
+                'tgl_lahir'=>$validated['tgl_lahir'],
+                'pekerjaan'=>$validated['pekerjaan'],
+                'pendidikan'=>$validated['pendidikan'],
+                'jumlah_anak'=>$validated['jumlah_anak'],
+                'uid'=>''
+            ]
+            );
 
         $user->roles()->attach(2,['user_modify'=>'su']);
 

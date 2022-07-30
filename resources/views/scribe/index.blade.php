@@ -30,9 +30,9 @@
         var useCsrf = Boolean();
         var csrfUrl = "/sanctum/csrf-cookie";
     </script>
-    <script src="{{ asset("/vendor/scribe/js/tryitout-3.33.2.js") }}"></script>
+    <script src="{{ asset("/vendor/scribe/js/tryitout-3.35.0.js") }}"></script>
 
-    <script src="{{ asset("/vendor/scribe/js/theme-default-3.33.2.js") }}"></script>
+    <script src="{{ asset("/vendor/scribe/js/theme-default-3.35.0.js") }}"></script>
 
 </head>
 
@@ -101,6 +101,18 @@
                                     <li class="tocify-item level-2" data-unique="endpoints-GETapi-post--slug-">
                         <a href="#endpoints-GETapi-post--slug-">Show a POST by slug</a>
                     </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-kehamilan">
+                        <a href="#endpoints-GETapi-kehamilan">Show all kehamilan</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-POSTapi-kehamilan">
+                        <a href="#endpoints-POSTapi-kehamilan">Tambah kehamilan</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-PUTapi-kehamilan-kehamilan--uidKehamilan-">
+                        <a href="#endpoints-PUTapi-kehamilan-kehamilan--uidKehamilan-">Update the specified resource in storage.</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-kehamilan-kehamilan--uidKehamilan-">
+                        <a href="#endpoints-DELETEapi-kehamilan-kehamilan--uidKehamilan-">Remove the specified resource from storage.</a>
+                    </li>
                                                     </ul>
                             </ul>
         
@@ -113,7 +125,7 @@
                             <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
                     </ul>
         <ul class="toc-footer" id="last-updated">
-        <li>Last updated: July 20 2022</li>
+        <li>Last updated: July 30 2022</li>
     </ul>
 </div>
 
@@ -153,14 +165,14 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"yrtntgpcsdzdjmqjsbizzfljqqrpflpbweylltelrayqyvgcctfmvtzvlaiworjoujqvdoybksyzfponpeznmqnmhbfdljbtdzbavtcyfopjqpmetcokavmbpobaqyybqymqdeosowywifrbfdcoprlyhrbpslbgxujhxcixvhhcgopcmoxuzjvbophwndcpzqwdwmdzrpwnpgmfyevbetbaphnloaqeyzquopxrxoxjtxpwzvibabape\",
-    \"email\": \"lmrlhabfayawqs\",
-    \"password\": \"qui\",
-    \"tempat_lahir\": \"debitis\",
-    \"tgl_lahir\": \"2022-07-20T00:53:35\",
-    \"pekerjaan\": \"ipsa\",
-    \"pendidikan\": \"placeat\",
-    \"jumlah_anak\": 24336269.868095625
+    \"name\": \"ljdmmcqerdghsfzldsolmalbwksmcbzuaxlwqsytjazldelmarrkumevrrnqyckblxhgjroqymsbhkgcwxdapuauvvlyznagzemxqxacntozryherwtcilqfvfubxsbavlwerqmdhxljhlrfpgymhixorcdljizbfilermjrcrx\",
+    \"email\": \"sombozonsxwsppemxqpccadmisfnrxswjaqspmopyrgkrvguopopigavxgojuajvsicvlgvd\",
+    \"password\": \"voluptatem\",
+    \"tempat_lahir\": \"veritatis\",
+    \"tgl_lahir\": \"2022-07-30T10:55:30\",
+    \"pekerjaan\": \"alias\",
+    \"pendidikan\": \"impedit\",
+    \"jumlah_anak\": 998.347628
 }"
 </code></pre></div>
 
@@ -176,14 +188,14 @@ const headers = {
 };
 
 let body = {
-    "name": "yrtntgpcsdzdjmqjsbizzfljqqrpflpbweylltelrayqyvgcctfmvtzvlaiworjoujqvdoybksyzfponpeznmqnmhbfdljbtdzbavtcyfopjqpmetcokavmbpobaqyybqymqdeosowywifrbfdcoprlyhrbpslbgxujhxcixvhhcgopcmoxuzjvbophwndcpzqwdwmdzrpwnpgmfyevbetbaphnloaqeyzquopxrxoxjtxpwzvibabape",
-    "email": "lmrlhabfayawqs",
-    "password": "qui",
-    "tempat_lahir": "debitis",
-    "tgl_lahir": "2022-07-20T00:53:35",
-    "pekerjaan": "ipsa",
-    "pendidikan": "placeat",
-    "jumlah_anak": 24336269.868095625
+    "name": "ljdmmcqerdghsfzldsolmalbwksmcbzuaxlwqsytjazldelmarrkumevrrnqyckblxhgjroqymsbhkgcwxdapuauvvlyznagzemxqxacntozryherwtcilqfvfubxsbavlwerqmdhxljhlrfpgymhixorcdljizbfilermjrcrx",
+    "email": "sombozonsxwsppemxqpccadmisfnrxswjaqspmopyrgkrvguopopigavxgojuajvsicvlgvd",
+    "password": "voluptatem",
+    "tempat_lahir": "veritatis",
+    "tgl_lahir": "2022-07-30T10:55:30",
+    "pekerjaan": "alias",
+    "pendidikan": "impedit",
+    "jumlah_anak": 998.347628
 };
 
 fetch(url, {
@@ -241,7 +253,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-register"
-               value="yrtntgpcsdzdjmqjsbizzfljqqrpflpbweylltelrayqyvgcctfmvtzvlaiworjoujqvdoybksyzfponpeznmqnmhbfdljbtdzbavtcyfopjqpmetcokavmbpobaqyybqymqdeosowywifrbfdcoprlyhrbpslbgxujhxcixvhhcgopcmoxuzjvbophwndcpzqwdwmdzrpwnpgmfyevbetbaphnloaqeyzquopxrxoxjtxpwzvibabape"
+               value="ljdmmcqerdghsfzldsolmalbwksmcbzuaxlwqsytjazldelmarrkumevrrnqyckblxhgjroqymsbhkgcwxdapuauvvlyznagzemxqxacntozryherwtcilqfvfubxsbavlwerqmdhxljhlrfpgymhixorcdljizbfilermjrcrx"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255 characters.</p>
@@ -251,7 +263,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-register"
-               value="lmrlhabfayawqs"
+               value="sombozonsxwsppemxqpccadmisfnrxswjaqspmopyrgkrvguopopigavxgojuajvsicvlgvd"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -261,7 +273,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-register"
-               value="qui"
+               value="voluptatem"
                data-component="body" hidden>
     <br>
 
@@ -271,7 +283,7 @@ fetch(url, {
                 <input type="text"
                name="tempat_lahir"
                data-endpoint="POSTapi-register"
-               value="debitis"
+               value="veritatis"
                data-component="body" hidden>
     <br>
 
@@ -281,7 +293,7 @@ fetch(url, {
                 <input type="text"
                name="tgl_lahir"
                data-endpoint="POSTapi-register"
-               value="2022-07-20T00:53:35"
+               value="2022-07-30T10:55:30"
                data-component="body" hidden>
     <br>
 <p>Must be a valid date.</p>
@@ -291,7 +303,7 @@ fetch(url, {
                 <input type="text"
                name="pekerjaan"
                data-endpoint="POSTapi-register"
-               value="ipsa"
+               value="alias"
                data-component="body" hidden>
     <br>
 
@@ -301,7 +313,7 @@ fetch(url, {
                 <input type="text"
                name="pendidikan"
                data-endpoint="POSTapi-register"
-               value="placeat"
+               value="impedit"
                data-component="body" hidden>
     <br>
 
@@ -311,7 +323,7 @@ fetch(url, {
                 <input type="number"
                name="jumlah_anak"
                data-endpoint="POSTapi-register"
-               value="24336269.868096"
+               value="998.347628"
                data-component="body" hidden>
     <br>
 
@@ -335,8 +347,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"quae\",
-    \"password\": \"eligendi\"
+    \"email\": \"est\",
+    \"password\": \"odio\"
 }"
 </code></pre></div>
 
@@ -352,8 +364,8 @@ const headers = {
 };
 
 let body = {
-    "email": "quae",
-    "password": "eligendi"
+    "email": "est",
+    "password": "odio"
 };
 
 fetch(url, {
@@ -411,7 +423,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-login"
-               value="quae"
+               value="est"
                data-component="body" hidden>
     <br>
 
@@ -421,7 +433,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-login"
-               value="eligendi"
+               value="odio"
                data-component="body" hidden>
     <br>
 
@@ -445,7 +457,7 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"myrtis36@example.org\"
+    \"email\": \"nayeli41@example.com\"
 }"
 </code></pre></div>
 
@@ -461,7 +473,7 @@ const headers = {
 };
 
 let body = {
-    "email": "myrtis36@example.org"
+    "email": "nayeli41@example.com"
 };
 
 fetch(url, {
@@ -519,7 +531,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-forgot-password"
-               value="myrtis36@example.org"
+               value="nayeli41@example.com"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -543,9 +555,9 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"token\": \"in\",
-    \"email\": \"jaylon82@example.net\",
-    \"password\": \"excepturi\"
+    \"token\": \"sapiente\",
+    \"email\": \"myrtie30@example.org\",
+    \"password\": \"aut\"
 }"
 </code></pre></div>
 
@@ -561,9 +573,9 @@ const headers = {
 };
 
 let body = {
-    "token": "in",
-    "email": "jaylon82@example.net",
-    "password": "excepturi"
+    "token": "sapiente",
+    "email": "myrtie30@example.org",
+    "password": "aut"
 };
 
 fetch(url, {
@@ -621,7 +633,7 @@ fetch(url, {
                 <input type="text"
                name="token"
                data-endpoint="POSTapi-reset-password"
-               value="in"
+               value="sapiente"
                data-component="body" hidden>
     <br>
 
@@ -631,7 +643,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-reset-password"
-               value="jaylon82@example.net"
+               value="myrtie30@example.org"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -641,7 +653,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-reset-password"
-               value="excepturi"
+               value="aut"
                data-component="body" hidden>
     <br>
 
@@ -791,7 +803,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 52
+x-ratelimit-remaining: 56
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
@@ -1325,47 +1337,19 @@ fetch(url, {
 
 <span id="example-responses-GETapi-post">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (204):</p>
         </blockquote>
                 <details class="annotation">
             <summary>
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 55
+x-ratelimit-remaining: 59
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
-
-<code class="language-json">{
-    &quot;response&quot;: {
-        &quot;total_record&quot;: 1,
-        &quot;list&quot;: [
-            {
-                &quot;id&quot;: 1,
-                &quot;title&quot;: &quot;Kehamilan&quot;,
-                &quot;description&quot;: &quot;3\nHome\nKehamilan\nKehamilan: Tanda, Proses Pembuahan, hingga Perkembangan Janin\n\n    DefinisiTanda dan gejalaWaktu periksaProsesPerkembangan janinPeluang kehamilanMengetahui kehamilanPenting dilakukanKomplikasi kehamilanMakanan yang perlu dihindariPengaruh pada kehamilan\n\nKehamilan: Tanda, Proses Pembuahan, hingga Perkembangan Janin\n \n\nHal istimewa yang hanya bisa dialami oleh wanita tetapi tidak pada pria yakni kehamilan. Kehamilan bukanlah proses yang singkat. Butuh waktu dan perjalanan panjang sejak pembuahan, perkembangan bayi di dalam kandungan, hingga nantinya melahirkan.\n \n\nPenting untuk mengetahui semua hal seputar masa kehamilan. Yuk, simak informasinya berikut ini!\n \nApa itu kehamilan?\n \n\nKehamilan adalah proses yang terjadi dari pembuahan sampai kelahiran. \n \n\nProses ini dimulai dari sel telur yang dibuahi oleh sperma, lalu tertanam di dalam lapisan rahim, dan kemudian menjadi janin. &quot;,
-                &quot;multimedia&quot;: null,
-                &quot;tags&quot;: null,
-                &quot;view_count&quot;: null,
-                &quot;post_status&quot;: &quot;publish&quot;,
-                &quot;slug&quot;: &quot;kehamilan&quot;,
-                &quot;created_at&quot;: null,
-                &quot;updated_at&quot;: null,
-                &quot;deleted_at&quot;: null
-            }
-        ],
-        &quot;page&quot;: 1,
-        &quot;limit&quot;: 100,
-        &quot;total_page&quot;: 1,
-        &quot;metadata&quot;: {
-            &quot;message&quot;: &quot;ok&quot;,
-            &quot;code&quot;: 200
-        }
-    }
-}</code>
+<code>[Empty response]</code>
  </pre>
     </span>
 <span id="execution-results-GETapi-post" hidden>
@@ -1423,14 +1407,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/post/category/aliquam" \
+    --get "http://localhost/api/post/category/est" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/post/category/aliquam"
+    "http://localhost/api/post/category/est"
 );
 
 const headers = {
@@ -1447,41 +1431,19 @@ fetch(url, {
 
 <span id="example-responses-GETapi-post-category--slug-">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (204):</p>
         </blockquote>
                 <details class="annotation">
             <summary>
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 54
+x-ratelimit-remaining: 58
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
-
-<code class="language-json">{
-    &quot;status&quot;: &quot;success&quot;,
-    &quot;response_code&quot;: 200,
-    &quot;message&quot;: &quot;Berhasil&quot;,
-    &quot;data&quot;: [
-        {
-            &quot;id&quot;: 1,
-            &quot;title&quot;: &quot;Kehamilan&quot;,
-            &quot;description&quot;: &quot;3\nHome\nKehamilan\nKehamilan: Tanda, Proses Pembuahan, hingga Perkembangan Janin\n\n    DefinisiTanda dan gejalaWaktu periksaProsesPerkembangan janinPeluang kehamilanMengetahui kehamilanPenting dilakukanKomplikasi kehamilanMakanan yang perlu dihindariPengaruh pada kehamilan\n\nKehamilan: Tanda, Proses Pembuahan, hingga Perkembangan Janin\n \n\nHal istimewa yang hanya bisa dialami oleh wanita tetapi tidak pada pria yakni kehamilan. Kehamilan bukanlah proses yang singkat. Butuh waktu dan perjalanan panjang sejak pembuahan, perkembangan bayi di dalam kandungan, hingga nantinya melahirkan.\n \n\nPenting untuk mengetahui semua hal seputar masa kehamilan. Yuk, simak informasinya berikut ini!\n \nApa itu kehamilan?\n \n\nKehamilan adalah proses yang terjadi dari pembuahan sampai kelahiran. \n \n\nProses ini dimulai dari sel telur yang dibuahi oleh sperma, lalu tertanam di dalam lapisan rahim, dan kemudian menjadi janin. &quot;,
-            &quot;multimedia&quot;: null,
-            &quot;tags&quot;: null,
-            &quot;view_count&quot;: null,
-            &quot;post_status&quot;: &quot;publish&quot;,
-            &quot;slug&quot;: &quot;kehamilan&quot;,
-            &quot;created_at&quot;: null,
-            &quot;updated_at&quot;: null,
-            &quot;deleted_at&quot;: null,
-            &quot;categories&quot;: []
-        }
-    ]
-}</code>
+<code>[Empty response]</code>
  </pre>
     </span>
 <span id="execution-results-GETapi-post-category--slug-" hidden>
@@ -1529,10 +1491,10 @@ access-control-allow-origin: *
                 <input type="text"
                name="slug"
                data-endpoint="GETapi-post-category--slug-"
-               value="aliquam"
+               value="est"
                data-component="url" hidden>
     <br>
-
+<p>The slug of the category.</p>
             </p>
                     </form>
 
@@ -1550,14 +1512,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/post/4" \
+    --get "http://localhost/api/post/6" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/post/4"
+    "http://localhost/api/post/6"
 );
 
 const headers = {
@@ -1582,7 +1544,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 53
+x-ratelimit-remaining: 57
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
@@ -1634,6 +1596,400 @@ access-control-allow-origin: *
                 <input type="number"
                name="slug"
                data-endpoint="GETapi-post--slug-"
+               value="6"
+               data-component="url" hidden>
+    <br>
+<p>The slug of the post.</p>
+            </p>
+                    </form>
+
+            <h2 id="endpoints-GETapi-kehamilan">Show all kehamilan</h2>
+
+<p>
+</p>
+
+<p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
+<p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
+
+<span id="example-requests-GETapi-kehamilan">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/kehamilan" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/kehamilan"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-kehamilan">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-kehamilan" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-kehamilan"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-kehamilan"></code></pre>
+</span>
+<span id="execution-error-GETapi-kehamilan" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-kehamilan"></code></pre>
+</span>
+<form id="form-GETapi-kehamilan" data-method="GET"
+      data-path="api/kehamilan"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-kehamilan', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-kehamilan"
+                    onclick="tryItOut('GETapi-kehamilan');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-kehamilan"
+                    onclick="cancelTryOut('GETapi-kehamilan');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-kehamilan" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/kehamilan</code></b>
+        </p>
+                    </form>
+
+            <h2 id="endpoints-POSTapi-kehamilan">Tambah kehamilan</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-kehamilan">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/kehamilan" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"kehamilan_ke\": 4,
+    \"hari_pertama_haid\": \"sit\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/kehamilan"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "kehamilan_ke": 4,
+    "hari_pertama_haid": "sit"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-kehamilan">
+</span>
+<span id="execution-results-POSTapi-kehamilan" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-kehamilan"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-kehamilan"></code></pre>
+</span>
+<span id="execution-error-POSTapi-kehamilan" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-kehamilan"></code></pre>
+</span>
+<form id="form-POSTapi-kehamilan" data-method="POST"
+      data-path="api/kehamilan"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-kehamilan', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-kehamilan"
+                    onclick="tryItOut('POSTapi-kehamilan');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-kehamilan"
+                    onclick="cancelTryOut('POSTapi-kehamilan');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-kehamilan" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/kehamilan</code></b>
+        </p>
+                <p>
+            <label id="auth-POSTapi-kehamilan" hidden>Authorization header:
+                <b><code>Bearer </code></b><input type="text"
+                                                                name="Authorization"
+                                                                data-prefix="Bearer "
+                                                                data-endpoint="POSTapi-kehamilan"
+                                                                data-component="header"></label>
+        </p>
+                        <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>kehamilan_ke</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="kehamilan_ke"
+               data-endpoint="POSTapi-kehamilan"
+               value="4"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>hari_pertama_haid</code></b>&nbsp;&nbsp;<small>date</small>  &nbsp;
+                <input type="text"
+               name="hari_pertama_haid"
+               data-endpoint="POSTapi-kehamilan"
+               value="sit"
+               data-component="body" hidden>
+    <br>
+<p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
+<p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
+        </p>
+        </form>
+
+            <h2 id="endpoints-PUTapi-kehamilan-kehamilan--uidKehamilan-">Update the specified resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTapi-kehamilan-kehamilan--uidKehamilan-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost/api/kehamilan/kehamilan/4" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/kehamilan/kehamilan/4"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-kehamilan-kehamilan--uidKehamilan-">
+</span>
+<span id="execution-results-PUTapi-kehamilan-kehamilan--uidKehamilan-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-kehamilan-kehamilan--uidKehamilan-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-kehamilan-kehamilan--uidKehamilan-"></code></pre>
+</span>
+<span id="execution-error-PUTapi-kehamilan-kehamilan--uidKehamilan-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-kehamilan-kehamilan--uidKehamilan-"></code></pre>
+</span>
+<form id="form-PUTapi-kehamilan-kehamilan--uidKehamilan-" data-method="PUT"
+      data-path="api/kehamilan/kehamilan/{uidKehamilan}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-kehamilan-kehamilan--uidKehamilan-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-kehamilan-kehamilan--uidKehamilan-"
+                    onclick="tryItOut('PUTapi-kehamilan-kehamilan--uidKehamilan-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-kehamilan-kehamilan--uidKehamilan-"
+                    onclick="cancelTryOut('PUTapi-kehamilan-kehamilan--uidKehamilan-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-kehamilan-kehamilan--uidKehamilan-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/kehamilan/kehamilan/{uidKehamilan}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>uidKehamilan</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="uidKehamilan"
+               data-endpoint="PUTapi-kehamilan-kehamilan--uidKehamilan-"
+               value="4"
+               data-component="url" hidden>
+    <br>
+
+            </p>
+                    </form>
+
+            <h2 id="endpoints-DELETEapi-kehamilan-kehamilan--uidKehamilan-">Remove the specified resource from storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-kehamilan-kehamilan--uidKehamilan-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost/api/kehamilan/kehamilan/4" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/kehamilan/kehamilan/4"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-kehamilan-kehamilan--uidKehamilan-">
+</span>
+<span id="execution-results-DELETEapi-kehamilan-kehamilan--uidKehamilan-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-kehamilan-kehamilan--uidKehamilan-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-kehamilan-kehamilan--uidKehamilan-"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-kehamilan-kehamilan--uidKehamilan-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-kehamilan-kehamilan--uidKehamilan-"></code></pre>
+</span>
+<form id="form-DELETEapi-kehamilan-kehamilan--uidKehamilan-" data-method="DELETE"
+      data-path="api/kehamilan/kehamilan/{uidKehamilan}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-kehamilan-kehamilan--uidKehamilan-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-kehamilan-kehamilan--uidKehamilan-"
+                    onclick="tryItOut('DELETEapi-kehamilan-kehamilan--uidKehamilan-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-kehamilan-kehamilan--uidKehamilan-"
+                    onclick="cancelTryOut('DELETEapi-kehamilan-kehamilan--uidKehamilan-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-kehamilan-kehamilan--uidKehamilan-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/kehamilan/kehamilan/{uidKehamilan}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>uidKehamilan</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="uidKehamilan"
+               data-endpoint="DELETEapi-kehamilan-kehamilan--uidKehamilan-"
                value="4"
                data-component="url" hidden>
     <br>
