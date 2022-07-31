@@ -114,13 +114,13 @@
                         <a href="#endpoints-DELETEapi-kehamilan--uidKehamilan-">Hapus kehamilan</a>
                     </li>
                                     <li class="tocify-item level-2" data-unique="endpoints-GETapi-history_kehamilan--uuidKehamilan-">
-                        <a href="#endpoints-GETapi-history_kehamilan--uuidKehamilan-">Show all kehamilan</a>
+                        <a href="#endpoints-GETapi-history_kehamilan--uuidKehamilan-">Show  history kehamilan</a>
                     </li>
                                     <li class="tocify-item level-2" data-unique="endpoints-POSTapi-history_kehamilan--uuidKehamilan-">
-                        <a href="#endpoints-POSTapi-history_kehamilan--uuidKehamilan-">Tambah kehamilan</a>
+                        <a href="#endpoints-POSTapi-history_kehamilan--uuidKehamilan-">Tambah history kehamilan</a>
                     </li>
                                     <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-history_kehamilan--uidKehamilan-">
-                        <a href="#endpoints-DELETEapi-history_kehamilan--uidKehamilan-">Hapus kehamilan</a>
+                        <a href="#endpoints-DELETEapi-history_kehamilan--uidKehamilan-">Hapus history kehamilan</a>
                     </li>
                                                     </ul>
                             </ul>
@@ -174,14 +174,14 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"smnjsvbhscmwzolaenyyxbvtnzvsnrtfmlhfqyzgwygqdxjsxdwnnvemlucokaafqkjygnscwcndxanjdjlaggqaerxamvseznzlebavzzkrafgzdrkvbbmzvpawdlxnervqffjuvxnhfinsvhzbvivpcnxkezydtmurunuoszfgsmbeorgpsegbihkchiwugw\",
-    \"email\": \"cbewsusydtcsunnugiuysolbvvezruycilibphieicsdcryzipnpgernrxbwruhundmfgviz\",
-    \"password\": \"sint\",
-    \"tempat_lahir\": \"necessitatibus\",
-    \"tgl_lahir\": \"2022-07-31T04:59:03\",
-    \"pekerjaan\": \"itaque\",
-    \"pendidikan\": \"nisi\",
-    \"jumlah_anak\": 1.96842202
+    \"name\": \"ywgnygsegqzhemvtgewwvolbyyqjdqslbtaqcioydxfogivroaqpopiqxegdilxgajjpjhkxbznjdqiysmbrsxygnksheltlniewfqlgkflrmtinucnpgoslitmdvmqxqlqhzwjyvyhpf\",
+    \"email\": \"mecktpqrwymzlybqwpmvuyvcqaznpfmntppjpadxcugpgrfsktafmlrjlvephudbrgzdnmrknpihgjexyrnvsmhekbpkdwjwzixyglkxfjbestbslmvtxtwzcoxnkpfylswwmpensfugdlziulwpwwgptqduqrnalecxqzqdswzfojslfuklbcgaphalhkwsifxcwfehctjhkauvqrnnahaepunpo\",
+    \"password\": \"eaque\",
+    \"tempat_lahir\": \"est\",
+    \"tgl_lahir\": \"2022-07-31T05:27:43\",
+    \"pekerjaan\": \"delectus\",
+    \"pendidikan\": \"placeat\",
+    \"jumlah_anak\": 121470550.0085
 }"
 </code></pre></div>
 
@@ -197,14 +197,14 @@ const headers = {
 };
 
 let body = {
-    "name": "smnjsvbhscmwzolaenyyxbvtnzvsnrtfmlhfqyzgwygqdxjsxdwnnvemlucokaafqkjygnscwcndxanjdjlaggqaerxamvseznzlebavzzkrafgzdrkvbbmzvpawdlxnervqffjuvxnhfinsvhzbvivpcnxkezydtmurunuoszfgsmbeorgpsegbihkchiwugw",
-    "email": "cbewsusydtcsunnugiuysolbvvezruycilibphieicsdcryzipnpgernrxbwruhundmfgviz",
-    "password": "sint",
-    "tempat_lahir": "necessitatibus",
-    "tgl_lahir": "2022-07-31T04:59:03",
-    "pekerjaan": "itaque",
-    "pendidikan": "nisi",
-    "jumlah_anak": 1.96842202
+    "name": "ywgnygsegqzhemvtgewwvolbyyqjdqslbtaqcioydxfogivroaqpopiqxegdilxgajjpjhkxbznjdqiysmbrsxygnksheltlniewfqlgkflrmtinucnpgoslitmdvmqxqlqhzwjyvyhpf",
+    "email": "mecktpqrwymzlybqwpmvuyvcqaznpfmntppjpadxcugpgrfsktafmlrjlvephudbrgzdnmrknpihgjexyrnvsmhekbpkdwjwzixyglkxfjbestbslmvtxtwzcoxnkpfylswwmpensfugdlziulwpwwgptqduqrnalecxqzqdswzfojslfuklbcgaphalhkwsifxcwfehctjhkauvqrnnahaepunpo",
+    "password": "eaque",
+    "tempat_lahir": "est",
+    "tgl_lahir": "2022-07-31T05:27:43",
+    "pekerjaan": "delectus",
+    "pendidikan": "placeat",
+    "jumlah_anak": 121470550.0085
 };
 
 fetch(url, {
@@ -262,7 +262,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-register"
-               value="smnjsvbhscmwzolaenyyxbvtnzvsnrtfmlhfqyzgwygqdxjsxdwnnvemlucokaafqkjygnscwcndxanjdjlaggqaerxamvseznzlebavzzkrafgzdrkvbbmzvpawdlxnervqffjuvxnhfinsvhzbvivpcnxkezydtmurunuoszfgsmbeorgpsegbihkchiwugw"
+               value="ywgnygsegqzhemvtgewwvolbyyqjdqslbtaqcioydxfogivroaqpopiqxegdilxgajjpjhkxbznjdqiysmbrsxygnksheltlniewfqlgkflrmtinucnpgoslitmdvmqxqlqhzwjyvyhpf"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255 characters.</p>
@@ -272,7 +272,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-register"
-               value="cbewsusydtcsunnugiuysolbvvezruycilibphieicsdcryzipnpgernrxbwruhundmfgviz"
+               value="mecktpqrwymzlybqwpmvuyvcqaznpfmntppjpadxcugpgrfsktafmlrjlvephudbrgzdnmrknpihgjexyrnvsmhekbpkdwjwzixyglkxfjbestbslmvtxtwzcoxnkpfylswwmpensfugdlziulwpwwgptqduqrnalecxqzqdswzfojslfuklbcgaphalhkwsifxcwfehctjhkauvqrnnahaepunpo"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -282,7 +282,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-register"
-               value="sint"
+               value="eaque"
                data-component="body" hidden>
     <br>
 
@@ -292,7 +292,7 @@ fetch(url, {
                 <input type="text"
                name="tempat_lahir"
                data-endpoint="POSTapi-register"
-               value="necessitatibus"
+               value="est"
                data-component="body" hidden>
     <br>
 
@@ -302,7 +302,7 @@ fetch(url, {
                 <input type="text"
                name="tgl_lahir"
                data-endpoint="POSTapi-register"
-               value="2022-07-31T04:59:03"
+               value="2022-07-31T05:27:43"
                data-component="body" hidden>
     <br>
 <p>Must be a valid date.</p>
@@ -312,7 +312,7 @@ fetch(url, {
                 <input type="text"
                name="pekerjaan"
                data-endpoint="POSTapi-register"
-               value="itaque"
+               value="delectus"
                data-component="body" hidden>
     <br>
 
@@ -322,7 +322,7 @@ fetch(url, {
                 <input type="text"
                name="pendidikan"
                data-endpoint="POSTapi-register"
-               value="nisi"
+               value="placeat"
                data-component="body" hidden>
     <br>
 
@@ -332,7 +332,7 @@ fetch(url, {
                 <input type="number"
                name="jumlah_anak"
                data-endpoint="POSTapi-register"
-               value="1.96842202"
+               value="121470550.0085"
                data-component="body" hidden>
     <br>
 
@@ -356,8 +356,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"temporibus\",
-    \"password\": \"natus\"
+    \"email\": \"et\",
+    \"password\": \"asperiores\"
 }"
 </code></pre></div>
 
@@ -373,8 +373,8 @@ const headers = {
 };
 
 let body = {
-    "email": "temporibus",
-    "password": "natus"
+    "email": "et",
+    "password": "asperiores"
 };
 
 fetch(url, {
@@ -432,7 +432,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-login"
-               value="temporibus"
+               value="et"
                data-component="body" hidden>
     <br>
 
@@ -442,7 +442,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-login"
-               value="natus"
+               value="asperiores"
                data-component="body" hidden>
     <br>
 
@@ -466,7 +466,7 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"nathanial43@example.com\"
+    \"email\": \"wconsidine@example.net\"
 }"
 </code></pre></div>
 
@@ -482,7 +482,7 @@ const headers = {
 };
 
 let body = {
-    "email": "nathanial43@example.com"
+    "email": "wconsidine@example.net"
 };
 
 fetch(url, {
@@ -540,7 +540,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-forgot-password"
-               value="nathanial43@example.com"
+               value="wconsidine@example.net"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -564,9 +564,9 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"token\": \"sint\",
-    \"email\": \"ceasar.emmerich@example.net\",
-    \"password\": \"doloribus\"
+    \"token\": \"quis\",
+    \"email\": \"lolita.goodwin@example.com\",
+    \"password\": \"nesciunt\"
 }"
 </code></pre></div>
 
@@ -582,9 +582,9 @@ const headers = {
 };
 
 let body = {
-    "token": "sint",
-    "email": "ceasar.emmerich@example.net",
-    "password": "doloribus"
+    "token": "quis",
+    "email": "lolita.goodwin@example.com",
+    "password": "nesciunt"
 };
 
 fetch(url, {
@@ -642,7 +642,7 @@ fetch(url, {
                 <input type="text"
                name="token"
                data-endpoint="POSTapi-reset-password"
-               value="sint"
+               value="quis"
                data-component="body" hidden>
     <br>
 
@@ -652,7 +652,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-reset-password"
-               value="ceasar.emmerich@example.net"
+               value="lolita.goodwin@example.com"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -662,7 +662,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-reset-password"
-               value="doloribus"
+               value="nesciunt"
                data-component="body" hidden>
     <br>
 
@@ -1416,14 +1416,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/post/category/hic" \
+    --get "http://localhost/api/post/category/odio" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/post/category/hic"
+    "http://localhost/api/post/category/odio"
 );
 
 const headers = {
@@ -1500,7 +1500,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="slug"
                data-endpoint="GETapi-post-category--slug-"
-               value="hic"
+               value="odio"
                data-component="url" hidden>
     <br>
 <p>The slug of the category.</p>
@@ -1521,14 +1521,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/post/15" \
+    --get "http://localhost/api/post/10" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/post/15"
+    "http://localhost/api/post/10"
 );
 
 const headers = {
@@ -1605,7 +1605,7 @@ access-control-allow-origin: *
                 <input type="number"
                name="slug"
                data-endpoint="GETapi-post--slug-"
-               value="15"
+               value="10"
                data-component="url" hidden>
     <br>
 <p>The slug of the post.</p>
@@ -1726,8 +1726,8 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"kehamilan_ke\": 16,
-    \"hari_pertama_haid\": \"enim\"
+    \"kehamilan_ke\": 18,
+    \"hari_pertama_haid\": \"aut\"
 }"
 </code></pre></div>
 
@@ -1743,8 +1743,8 @@ const headers = {
 };
 
 let body = {
-    "kehamilan_ke": 16,
-    "hari_pertama_haid": "enim"
+    "kehamilan_ke": 18,
+    "hari_pertama_haid": "aut"
 };
 
 fetch(url, {
@@ -1810,7 +1810,7 @@ fetch(url, {
                 <input type="number"
                name="kehamilan_ke"
                data-endpoint="POSTapi-kehamilan"
-               value="16"
+               value="18"
                data-component="body" hidden>
     <br>
 
@@ -1820,7 +1820,7 @@ fetch(url, {
                 <input type="text"
                name="hari_pertama_haid"
                data-endpoint="POSTapi-kehamilan"
-               value="enim"
+               value="aut"
                data-component="body" hidden>
     <br>
 <p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
@@ -1842,19 +1842,19 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/kehamilan/quia" \
+    "http://localhost/api/kehamilan/et" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"kehamilan_ke\": 18,
-    \"hari_pertama_haid\": \"est\"
+    \"kehamilan_ke\": 6,
+    \"hari_pertama_haid\": \"quo\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/kehamilan/quia"
+    "http://localhost/api/kehamilan/et"
 );
 
 const headers = {
@@ -1863,8 +1863,8 @@ const headers = {
 };
 
 let body = {
-    "kehamilan_ke": 18,
-    "hari_pertama_haid": "est"
+    "kehamilan_ke": 6,
+    "hari_pertama_haid": "quo"
 };
 
 fetch(url, {
@@ -1930,7 +1930,7 @@ fetch(url, {
                 <input type="text"
                name="uidKehamilan"
                data-endpoint="PUTapi-kehamilan--uidKehamilan-"
-               value="quia"
+               value="et"
                data-component="url" hidden>
     <br>
 <p>berupa unique id record (uuid) dari kehamilan</p>
@@ -1941,7 +1941,7 @@ fetch(url, {
                 <input type="number"
                name="kehamilan_ke"
                data-endpoint="PUTapi-kehamilan--uidKehamilan-"
-               value="18"
+               value="6"
                data-component="body" hidden>
     <br>
 
@@ -1951,7 +1951,7 @@ fetch(url, {
                 <input type="text"
                name="hari_pertama_haid"
                data-endpoint="PUTapi-kehamilan--uidKehamilan-"
-               value="est"
+               value="quo"
                data-component="body" hidden>
     <br>
 <p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
@@ -1973,14 +1973,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/kehamilan/autem" \
+    "http://localhost/api/kehamilan/fugiat" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/kehamilan/autem"
+    "http://localhost/api/kehamilan/fugiat"
 );
 
 const headers = {
@@ -2050,7 +2050,7 @@ fetch(url, {
                 <input type="text"
                name="uidKehamilan"
                data-endpoint="DELETEapi-kehamilan--uidKehamilan-"
-               value="autem"
+               value="fugiat"
                data-component="url" hidden>
     <br>
 <p>berupa unique id record (uuid) dari kehamilan</p>
@@ -2059,7 +2059,7 @@ fetch(url, {
             </p>
                     </form>
 
-            <h2 id="endpoints-GETapi-history_kehamilan--uuidKehamilan-">Show all kehamilan</h2>
+            <h2 id="endpoints-GETapi-history_kehamilan--uuidKehamilan-">Show  history kehamilan</h2>
 
 <p>
 </p>
@@ -2073,14 +2073,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/history_kehamilan/8" \
+    --get "http://localhost/api/history_kehamilan/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/history_kehamilan/8"
+    "http://localhost/api/history_kehamilan/1"
 );
 
 const headers = {
@@ -2159,14 +2159,14 @@ access-control-allow-origin: *
                 <input type="number"
                name="uuidKehamilan"
                data-endpoint="GETapi-history_kehamilan--uuidKehamilan-"
-               value="8"
+               value="1"
                data-component="url" hidden>
     <br>
 
             </p>
                     </form>
 
-            <h2 id="endpoints-POSTapi-history_kehamilan--uuidKehamilan-">Tambah kehamilan</h2>
+            <h2 id="endpoints-POSTapi-history_kehamilan--uuidKehamilan-">Tambah history kehamilan</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -2180,20 +2180,20 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/history_kehamilan/13" \
+    "http://localhost/api/history_kehamilan/9" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"jumlah_gerakan_janin\": 7,
-    \"waktu_pengukuran\": \"ut\",
-    \"lama_waktu_pengukuran\": 18
+    \"jumlah_gerakan_janin\": 12,
+    \"waktu_pengukuran\": \"eum\",
+    \"lama_waktu_pengukuran\": 2
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/history_kehamilan/13"
+    "http://localhost/api/history_kehamilan/9"
 );
 
 const headers = {
@@ -2202,9 +2202,9 @@ const headers = {
 };
 
 let body = {
-    "jumlah_gerakan_janin": 7,
-    "waktu_pengukuran": "ut",
-    "lama_waktu_pengukuran": 18
+    "jumlah_gerakan_janin": 12,
+    "waktu_pengukuran": "eum",
+    "lama_waktu_pengukuran": 2
 };
 
 fetch(url, {
@@ -2270,7 +2270,7 @@ fetch(url, {
                 <input type="number"
                name="uuidKehamilan"
                data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
-               value="13"
+               value="9"
                data-component="url" hidden>
     <br>
 
@@ -2281,7 +2281,7 @@ fetch(url, {
                 <input type="number"
                name="jumlah_gerakan_janin"
                data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
-               value="7"
+               value="12"
                data-component="body" hidden>
     <br>
 
@@ -2291,7 +2291,7 @@ fetch(url, {
                 <input type="text"
                name="waktu_pengukuran"
                data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
-               value="ut"
+               value="eum"
                data-component="body" hidden>
     <br>
 
@@ -2301,7 +2301,7 @@ fetch(url, {
                 <input type="number"
                name="lama_waktu_pengukuran"
                data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
-               value="18"
+               value="2"
                data-component="body" hidden>
     <br>
 <p>lama waktu pengukuran dalam satuan detik</p>
@@ -2310,7 +2310,7 @@ fetch(url, {
         </p>
         </form>
 
-            <h2 id="endpoints-DELETEapi-history_kehamilan--uidKehamilan-">Hapus kehamilan</h2>
+            <h2 id="endpoints-DELETEapi-history_kehamilan--uidKehamilan-">Hapus history kehamilan</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -2324,14 +2324,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/history_kehamilan/10" \
+    "http://localhost/api/history_kehamilan/5" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/history_kehamilan/10"
+    "http://localhost/api/history_kehamilan/5"
 );
 
 const headers = {
@@ -2401,7 +2401,7 @@ fetch(url, {
                 <input type="number"
                name="uidKehamilan"
                data-endpoint="DELETEapi-history_kehamilan--uidKehamilan-"
-               value="10"
+               value="5"
                data-component="url" hidden>
     <br>
 
@@ -2411,7 +2411,7 @@ fetch(url, {
                 <input type="text"
                name="uuidHistoryKehamilan"
                data-endpoint="DELETEapi-history_kehamilan--uidKehamilan-"
-               value="nesciunt"
+               value="facere"
                data-component="url" hidden>
     <br>
 <p>berupa unique id record (uuid) dari history kehamilan</p>

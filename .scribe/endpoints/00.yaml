@@ -20,56 +20,56 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: smnjsvbhscmwzolaenyyxbvtnzvsnrtfmlhfqyzgwygqdxjsxdwnnvemlucokaafqkjygnscwcndxanjdjlaggqaerxamvseznzlebavzzkrafgzdrkvbbmzvpawdlxnervqffjuvxnhfinsvhzbvivpcnxkezydtmurunuoszfgsmbeorgpsegbihkchiwugw
+        example: ywgnygsegqzhemvtgewwvolbyyqjdqslbtaqcioydxfogivroaqpopiqxegdilxgajjpjhkxbznjdqiysmbrsxygnksheltlniewfqlgkflrmtinucnpgoslitmdvmqxqlqhzwjyvyhpf
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: cbewsusydtcsunnugiuysolbvvezruycilibphieicsdcryzipnpgernrxbwruhundmfgviz
+        example: mecktpqrwymzlybqwpmvuyvcqaznpfmntppjpadxcugpgrfsktafmlrjlvephudbrgzdnmrknpihgjexyrnvsmhekbpkdwjwzixyglkxfjbestbslmvtxtwzcoxnkpfylswwmpensfugdlziulwpwwgptqduqrnalecxqzqdswzfojslfuklbcgaphalhkwsifxcwfehctjhkauvqrnnahaepunpo
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: sint
+        example: eaque
         type: string
         custom: []
       tempat_lahir:
         name: tempat_lahir
         description: ''
         required: true
-        example: necessitatibus
+        example: est
         type: string
         custom: []
       tgl_lahir:
         name: tgl_lahir
         description: 'Must be a valid date.'
         required: true
-        example: '2022-07-31T04:59:03'
+        example: '2022-07-31T05:27:43'
         type: string
         custom: []
       pekerjaan:
         name: pekerjaan
         description: ''
         required: true
-        example: itaque
+        example: delectus
         type: string
         custom: []
       pendidikan:
         name: pendidikan
         description: ''
         required: true
-        example: nisi
+        example: placeat
         type: string
         custom: []
       jumlah_anak:
         name: jumlah_anak
         description: ''
         required: true
-        example: 1.96842202
+        example: 121470550.0085
         type: number
         custom: []
     responses: []
@@ -93,14 +93,14 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: temporibus
+        example: et
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: natus
+        example: asperiores
         type: string
         custom: []
     responses: []
@@ -124,7 +124,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: nathanial43@example.com
+        example: wconsidine@example.net
         type: string
         custom: []
     responses: []
@@ -148,21 +148,21 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: sint
+        example: quis
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: ceasar.emmerich@example.net
+        example: lolita.goodwin@example.com
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: doloribus
+        example: nesciunt
         type: string
         custom: []
     responses: []
@@ -720,7 +720,7 @@ endpoints:
         name: slug
         description: 'The slug of the category.'
         required: true
-        example: hic
+        example: odio
         type: string
         custom: []
     queryParameters: []
@@ -756,7 +756,7 @@ endpoints:
         name: slug
         description: 'The slug of the post.'
         required: true
-        example: 15
+        example: 10
         type: integer
         custom: []
     queryParameters: []
@@ -819,7 +819,7 @@ endpoints:
         name: kehamilan_ke
         description: ''
         required: true
-        example: 16
+        example: 18
         type: integer
         custom: []
       hari_pertama_haid:
@@ -829,7 +829,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: enim
+        example: aut
         type: date
         custom: []
     responses: []
@@ -851,7 +851,7 @@ endpoints:
         name: uidKehamilan
         description: 'berupa unique id record (uuid) dari kehamilan'
         required: true
-        example: quia
+        example: et
         type: string
         custom: []
     queryParameters: []
@@ -860,7 +860,7 @@ endpoints:
         name: kehamilan_ke
         description: ''
         required: true
-        example: 18
+        example: 6
         type: integer
         custom: []
       hari_pertama_haid:
@@ -870,7 +870,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: est
+        example: quo
         type: date
         custom: []
     responses: []
@@ -897,7 +897,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: autem
+        example: fugiat
         type: string
         custom: []
     queryParameters: []
@@ -909,7 +909,7 @@ endpoints:
       - GET
     uri: 'api/history_kehamilan/{uuidKehamilan}'
     metadata:
-      title: 'Show all kehamilan'
+      title: 'Show  history kehamilan'
       description: |-
         Check that the service is up. If everything is okay, you'll get a 200 OK response.
 
@@ -924,7 +924,7 @@ endpoints:
         name: uuidKehamilan
         description: ''
         required: true
-        example: 8
+        example: 1
         type: integer
         custom: []
     queryParameters: []
@@ -944,7 +944,7 @@ endpoints:
       - POST
     uri: 'api/history_kehamilan/{uuidKehamilan}'
     metadata:
-      title: 'Tambah kehamilan'
+      title: 'Tambah history kehamilan'
       description: ''
       authenticated: true
       custom: []
@@ -956,7 +956,7 @@ endpoints:
         name: uuidKehamilan
         description: ''
         required: true
-        example: 13
+        example: 9
         type: integer
         custom: []
     queryParameters: []
@@ -965,14 +965,14 @@ endpoints:
         name: jumlah_gerakan_janin
         description: ''
         required: true
-        example: 7
+        example: 12
         type: integer
         custom: []
       waktu_pengukuran:
         name: waktu_pengukuran
         description: ''
         required: true
-        example: ut
+        example: eum
         type: date
         custom: []
       lama_waktu_pengukuran:
@@ -984,7 +984,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: 18
+        example: 2
         type: integer
         custom: []
     responses: []
@@ -994,7 +994,7 @@ endpoints:
       - DELETE
     uri: 'api/history_kehamilan/{uidKehamilan}'
     metadata:
-      title: 'Hapus kehamilan'
+      title: 'Hapus history kehamilan'
       description: ''
       authenticated: true
       custom: []
@@ -1006,7 +1006,7 @@ endpoints:
         name: uidKehamilan
         description: ''
         required: true
-        example: 10
+        example: 5
         type: integer
         custom: []
       uuidHistoryKehamilan:
@@ -1018,7 +1018,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: nesciunt
+        example: facere
         type: string
         custom: []
     queryParameters: []

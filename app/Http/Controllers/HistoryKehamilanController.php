@@ -19,7 +19,7 @@ class HistoryKehamilanController extends Controller
     use ApiResponse;
 
      /**
-     * Show all kehamilan
+     * Show  history kehamilan
      *
      * Check that the service is up. If everything is okay, you'll get a 200 OK response.
      *
@@ -50,7 +50,7 @@ class HistoryKehamilanController extends Controller
     }
 
      /**
-     * Tambah kehamilan
+     * Tambah history kehamilan
      * @authenticated
      * @bodyParam jumlah_gerakan_janin int required
      * @bodyParam waktu_pengukuran date required
@@ -78,7 +78,7 @@ class HistoryKehamilanController extends Controller
     }
 
     /**
-     * Hapus kehamilan
+     * Hapus history kehamilan
      * @authenticated
      * @urlParam uuidHistoryKehamilan string required berupa unique id record (uuid) dari history kehamilan
      *
