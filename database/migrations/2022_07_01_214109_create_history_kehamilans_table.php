@@ -16,6 +16,7 @@ class CreateHistoryKehamilansTable extends Migration
     {
         Schema::create('history_kehamilans', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid');
             $table->foreignIdFor(Kehamilan::class);
             $table->integer('jumlah_gerakan_janin');
             $table->dateTime('waktu_pengukuran');

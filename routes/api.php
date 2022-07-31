@@ -9,6 +9,7 @@ use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
+use App\Http\Controllers\HistoryKehamilanController;
 use App\Http\Controllers\PostCategoryController;
 use App\Http\Controllers\PostController;
 use Illuminate\Http\Request;
@@ -66,9 +67,22 @@ Route::prefix('kehamilan')->middleware('auth:sanctum')->group(function(){
 
     Route::post('/',[KehamilanController::class,'store'])->name('kehamilan.store');
 
-    Route::put('/kehamilan/{uidKehamilan}',[KehamilanController::class,'update'])->name('kehamilan.update');
+    Route::put('/{uidKehamilan}',[KehamilanController::class,'update'])->name('kehamilan.update');
 
-    Route::delete('/kehamilan/{uidKehamilan}',[KehamilanController::class,'destroy'])->name('kehamilan.destroy');
+    Route::delete('/{uidKehamilan}',[KehamilanController::class,'destroy'])->name('kehamilan.destroy');
+
+
+});
+
+Route::prefix('history_kehamilan')->middleware('auth:sanctum')->group(function(){
+
+    Route::get('/{uuidKehamilan}',[HistoryKehamilanController::class,'index'])->name('history_kehamilan.index');
+
+    Route::post('/{uuidKehamilan}',[HistoryKehamilanController::class,'store'])->name('history_kehamilan.store');
+
+   // Route::put('/{uidKehamilan}',[KehamilanController::class,'update'])->name('history_kehamilan.update');
+
+    Route::delete('/{uidKehamilan}',[HistoryKehamilanController::class,'destroy'])->name('history_kehamilan.destroy');
 
 
 });

@@ -15,13 +15,11 @@ class KehamilanRequest extends FormRequest
      */
     public function authorize()
     {
-
         if($this->method() == 'POST'){
             return true;
         }
         else if (($this->method() == 'PUT' || $this->method() == 'DESTROY') && !$this->user()->isRole(RoleName::SUPERADMIN)) {
-            $kehamilan=Kehamilan::find($this->route('id'));
-            return $this->user()->id==$kehamilan->user_id;
+            return (Kehamilan::where('uuid',$this->route('uidKehamilan'))->where('user_id',$this->user()->id)->count() > 0);
         }
         return false;
 

@@ -107,11 +107,20 @@
                                     <li class="tocify-item level-2" data-unique="endpoints-POSTapi-kehamilan">
                         <a href="#endpoints-POSTapi-kehamilan">Tambah kehamilan</a>
                     </li>
-                                    <li class="tocify-item level-2" data-unique="endpoints-PUTapi-kehamilan-kehamilan--uidKehamilan-">
-                        <a href="#endpoints-PUTapi-kehamilan-kehamilan--uidKehamilan-">Update the specified resource in storage.</a>
+                                    <li class="tocify-item level-2" data-unique="endpoints-PUTapi-kehamilan--uidKehamilan-">
+                        <a href="#endpoints-PUTapi-kehamilan--uidKehamilan-">Update kehamilan</a>
                     </li>
-                                    <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-kehamilan-kehamilan--uidKehamilan-">
-                        <a href="#endpoints-DELETEapi-kehamilan-kehamilan--uidKehamilan-">Remove the specified resource from storage.</a>
+                                    <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-kehamilan--uidKehamilan-">
+                        <a href="#endpoints-DELETEapi-kehamilan--uidKehamilan-">Hapus kehamilan</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-history_kehamilan--uuidKehamilan-">
+                        <a href="#endpoints-GETapi-history_kehamilan--uuidKehamilan-">Show all kehamilan</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-POSTapi-history_kehamilan--uuidKehamilan-">
+                        <a href="#endpoints-POSTapi-history_kehamilan--uuidKehamilan-">Tambah kehamilan</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-history_kehamilan--uidKehamilan-">
+                        <a href="#endpoints-DELETEapi-history_kehamilan--uidKehamilan-">Hapus kehamilan</a>
                     </li>
                                                     </ul>
                             </ul>
@@ -125,7 +134,7 @@
                             <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
                     </ul>
         <ul class="toc-footer" id="last-updated">
-        <li>Last updated: July 30 2022</li>
+        <li>Last updated: July 31 2022</li>
     </ul>
 </div>
 
@@ -165,14 +174,14 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"ljdmmcqerdghsfzldsolmalbwksmcbzuaxlwqsytjazldelmarrkumevrrnqyckblxhgjroqymsbhkgcwxdapuauvvlyznagzemxqxacntozryherwtcilqfvfubxsbavlwerqmdhxljhlrfpgymhixorcdljizbfilermjrcrx\",
-    \"email\": \"sombozonsxwsppemxqpccadmisfnrxswjaqspmopyrgkrvguopopigavxgojuajvsicvlgvd\",
-    \"password\": \"voluptatem\",
-    \"tempat_lahir\": \"veritatis\",
-    \"tgl_lahir\": \"2022-07-30T10:55:30\",
-    \"pekerjaan\": \"alias\",
-    \"pendidikan\": \"impedit\",
-    \"jumlah_anak\": 998.347628
+    \"name\": \"smnjsvbhscmwzolaenyyxbvtnzvsnrtfmlhfqyzgwygqdxjsxdwnnvemlucokaafqkjygnscwcndxanjdjlaggqaerxamvseznzlebavzzkrafgzdrkvbbmzvpawdlxnervqffjuvxnhfinsvhzbvivpcnxkezydtmurunuoszfgsmbeorgpsegbihkchiwugw\",
+    \"email\": \"cbewsusydtcsunnugiuysolbvvezruycilibphieicsdcryzipnpgernrxbwruhundmfgviz\",
+    \"password\": \"sint\",
+    \"tempat_lahir\": \"necessitatibus\",
+    \"tgl_lahir\": \"2022-07-31T04:59:03\",
+    \"pekerjaan\": \"itaque\",
+    \"pendidikan\": \"nisi\",
+    \"jumlah_anak\": 1.96842202
 }"
 </code></pre></div>
 
@@ -188,14 +197,14 @@ const headers = {
 };
 
 let body = {
-    "name": "ljdmmcqerdghsfzldsolmalbwksmcbzuaxlwqsytjazldelmarrkumevrrnqyckblxhgjroqymsbhkgcwxdapuauvvlyznagzemxqxacntozryherwtcilqfvfubxsbavlwerqmdhxljhlrfpgymhixorcdljizbfilermjrcrx",
-    "email": "sombozonsxwsppemxqpccadmisfnrxswjaqspmopyrgkrvguopopigavxgojuajvsicvlgvd",
-    "password": "voluptatem",
-    "tempat_lahir": "veritatis",
-    "tgl_lahir": "2022-07-30T10:55:30",
-    "pekerjaan": "alias",
-    "pendidikan": "impedit",
-    "jumlah_anak": 998.347628
+    "name": "smnjsvbhscmwzolaenyyxbvtnzvsnrtfmlhfqyzgwygqdxjsxdwnnvemlucokaafqkjygnscwcndxanjdjlaggqaerxamvseznzlebavzzkrafgzdrkvbbmzvpawdlxnervqffjuvxnhfinsvhzbvivpcnxkezydtmurunuoszfgsmbeorgpsegbihkchiwugw",
+    "email": "cbewsusydtcsunnugiuysolbvvezruycilibphieicsdcryzipnpgernrxbwruhundmfgviz",
+    "password": "sint",
+    "tempat_lahir": "necessitatibus",
+    "tgl_lahir": "2022-07-31T04:59:03",
+    "pekerjaan": "itaque",
+    "pendidikan": "nisi",
+    "jumlah_anak": 1.96842202
 };
 
 fetch(url, {
@@ -253,7 +262,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-register"
-               value="ljdmmcqerdghsfzldsolmalbwksmcbzuaxlwqsytjazldelmarrkumevrrnqyckblxhgjroqymsbhkgcwxdapuauvvlyznagzemxqxacntozryherwtcilqfvfubxsbavlwerqmdhxljhlrfpgymhixorcdljizbfilermjrcrx"
+               value="smnjsvbhscmwzolaenyyxbvtnzvsnrtfmlhfqyzgwygqdxjsxdwnnvemlucokaafqkjygnscwcndxanjdjlaggqaerxamvseznzlebavzzkrafgzdrkvbbmzvpawdlxnervqffjuvxnhfinsvhzbvivpcnxkezydtmurunuoszfgsmbeorgpsegbihkchiwugw"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255 characters.</p>
@@ -263,7 +272,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-register"
-               value="sombozonsxwsppemxqpccadmisfnrxswjaqspmopyrgkrvguopopigavxgojuajvsicvlgvd"
+               value="cbewsusydtcsunnugiuysolbvvezruycilibphieicsdcryzipnpgernrxbwruhundmfgviz"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -273,7 +282,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-register"
-               value="voluptatem"
+               value="sint"
                data-component="body" hidden>
     <br>
 
@@ -283,7 +292,7 @@ fetch(url, {
                 <input type="text"
                name="tempat_lahir"
                data-endpoint="POSTapi-register"
-               value="veritatis"
+               value="necessitatibus"
                data-component="body" hidden>
     <br>
 
@@ -293,7 +302,7 @@ fetch(url, {
                 <input type="text"
                name="tgl_lahir"
                data-endpoint="POSTapi-register"
-               value="2022-07-30T10:55:30"
+               value="2022-07-31T04:59:03"
                data-component="body" hidden>
     <br>
 <p>Must be a valid date.</p>
@@ -303,7 +312,7 @@ fetch(url, {
                 <input type="text"
                name="pekerjaan"
                data-endpoint="POSTapi-register"
-               value="alias"
+               value="itaque"
                data-component="body" hidden>
     <br>
 
@@ -313,7 +322,7 @@ fetch(url, {
                 <input type="text"
                name="pendidikan"
                data-endpoint="POSTapi-register"
-               value="impedit"
+               value="nisi"
                data-component="body" hidden>
     <br>
 
@@ -323,7 +332,7 @@ fetch(url, {
                 <input type="number"
                name="jumlah_anak"
                data-endpoint="POSTapi-register"
-               value="998.347628"
+               value="1.96842202"
                data-component="body" hidden>
     <br>
 
@@ -347,8 +356,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"est\",
-    \"password\": \"odio\"
+    \"email\": \"temporibus\",
+    \"password\": \"natus\"
 }"
 </code></pre></div>
 
@@ -364,8 +373,8 @@ const headers = {
 };
 
 let body = {
-    "email": "est",
-    "password": "odio"
+    "email": "temporibus",
+    "password": "natus"
 };
 
 fetch(url, {
@@ -423,7 +432,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-login"
-               value="est"
+               value="temporibus"
                data-component="body" hidden>
     <br>
 
@@ -433,7 +442,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-login"
-               value="odio"
+               value="natus"
                data-component="body" hidden>
     <br>
 
@@ -457,7 +466,7 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"nayeli41@example.com\"
+    \"email\": \"nathanial43@example.com\"
 }"
 </code></pre></div>
 
@@ -473,7 +482,7 @@ const headers = {
 };
 
 let body = {
-    "email": "nayeli41@example.com"
+    "email": "nathanial43@example.com"
 };
 
 fetch(url, {
@@ -531,7 +540,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-forgot-password"
-               value="nayeli41@example.com"
+               value="nathanial43@example.com"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -555,9 +564,9 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"token\": \"sapiente\",
-    \"email\": \"myrtie30@example.org\",
-    \"password\": \"aut\"
+    \"token\": \"sint\",
+    \"email\": \"ceasar.emmerich@example.net\",
+    \"password\": \"doloribus\"
 }"
 </code></pre></div>
 
@@ -573,9 +582,9 @@ const headers = {
 };
 
 let body = {
-    "token": "sapiente",
-    "email": "myrtie30@example.org",
-    "password": "aut"
+    "token": "sint",
+    "email": "ceasar.emmerich@example.net",
+    "password": "doloribus"
 };
 
 fetch(url, {
@@ -633,7 +642,7 @@ fetch(url, {
                 <input type="text"
                name="token"
                data-endpoint="POSTapi-reset-password"
-               value="sapiente"
+               value="sint"
                data-component="body" hidden>
     <br>
 
@@ -643,7 +652,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-reset-password"
-               value="myrtie30@example.org"
+               value="ceasar.emmerich@example.net"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -653,7 +662,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-reset-password"
-               value="aut"
+               value="doloribus"
                data-component="body" hidden>
     <br>
 
@@ -1407,14 +1416,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/post/category/est" \
+    --get "http://localhost/api/post/category/hic" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/post/category/est"
+    "http://localhost/api/post/category/hic"
 );
 
 const headers = {
@@ -1491,7 +1500,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="slug"
                data-endpoint="GETapi-post-category--slug-"
-               value="est"
+               value="hic"
                data-component="url" hidden>
     <br>
 <p>The slug of the category.</p>
@@ -1512,14 +1521,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/post/6" \
+    --get "http://localhost/api/post/15" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/post/6"
+    "http://localhost/api/post/15"
 );
 
 const headers = {
@@ -1596,7 +1605,7 @@ access-control-allow-origin: *
                 <input type="number"
                name="slug"
                data-endpoint="GETapi-post--slug-"
-               value="6"
+               value="15"
                data-component="url" hidden>
     <br>
 <p>The slug of the post.</p>
@@ -1717,8 +1726,8 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"kehamilan_ke\": 4,
-    \"hari_pertama_haid\": \"sit\"
+    \"kehamilan_ke\": 16,
+    \"hari_pertama_haid\": \"enim\"
 }"
 </code></pre></div>
 
@@ -1734,8 +1743,8 @@ const headers = {
 };
 
 let body = {
-    "kehamilan_ke": 4,
-    "hari_pertama_haid": "sit"
+    "kehamilan_ke": 16,
+    "hari_pertama_haid": "enim"
 };
 
 fetch(url, {
@@ -1801,7 +1810,7 @@ fetch(url, {
                 <input type="number"
                name="kehamilan_ke"
                data-endpoint="POSTapi-kehamilan"
-               value="4"
+               value="16"
                data-component="body" hidden>
     <br>
 
@@ -1811,7 +1820,7 @@ fetch(url, {
                 <input type="text"
                name="hari_pertama_haid"
                data-endpoint="POSTapi-kehamilan"
-               value="sit"
+               value="enim"
                data-component="body" hidden>
     <br>
 <p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
@@ -1819,27 +1828,33 @@ fetch(url, {
         </p>
         </form>
 
-            <h2 id="endpoints-PUTapi-kehamilan-kehamilan--uidKehamilan-">Update the specified resource in storage.</h2>
+            <h2 id="endpoints-PUTapi-kehamilan--uidKehamilan-">Update kehamilan</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
 
-<span id="example-requests-PUTapi-kehamilan-kehamilan--uidKehamilan-">
+<span id="example-requests-PUTapi-kehamilan--uidKehamilan-">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/kehamilan/kehamilan/4" \
+    "http://localhost/api/kehamilan/quia" \
     --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
+    --header "Accept: application/json" \
+    --data "{
+    \"kehamilan_ke\": 18,
+    \"hari_pertama_haid\": \"est\"
+}"
+</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/kehamilan/kehamilan/4"
+    "http://localhost/api/kehamilan/quia"
 );
 
 const headers = {
@@ -1847,88 +1862,125 @@ const headers = {
     "Accept": "application/json",
 };
 
+let body = {
+    "kehamilan_ke": 18,
+    "hari_pertama_haid": "est"
+};
+
 fetch(url, {
     method: "PUT",
     headers,
+    body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
 
-<span id="example-responses-PUTapi-kehamilan-kehamilan--uidKehamilan-">
+<span id="example-responses-PUTapi-kehamilan--uidKehamilan-">
 </span>
-<span id="execution-results-PUTapi-kehamilan-kehamilan--uidKehamilan-" hidden>
+<span id="execution-results-PUTapi-kehamilan--uidKehamilan-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-PUTapi-kehamilan-kehamilan--uidKehamilan-"></span>:
+                id="execution-response-status-PUTapi-kehamilan--uidKehamilan-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-PUTapi-kehamilan-kehamilan--uidKehamilan-"></code></pre>
+    <pre class="json"><code id="execution-response-content-PUTapi-kehamilan--uidKehamilan-"></code></pre>
 </span>
-<span id="execution-error-PUTapi-kehamilan-kehamilan--uidKehamilan-" hidden>
+<span id="execution-error-PUTapi-kehamilan--uidKehamilan-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTapi-kehamilan-kehamilan--uidKehamilan-"></code></pre>
+    <pre><code id="execution-error-message-PUTapi-kehamilan--uidKehamilan-"></code></pre>
 </span>
-<form id="form-PUTapi-kehamilan-kehamilan--uidKehamilan-" data-method="PUT"
-      data-path="api/kehamilan/kehamilan/{uidKehamilan}"
-      data-authed="0"
+<form id="form-PUTapi-kehamilan--uidKehamilan-" data-method="PUT"
+      data-path="api/kehamilan/{uidKehamilan}"
+      data-authed="1"
       data-hasfiles="0"
       data-isarraybody="0"
       data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PUTapi-kehamilan-kehamilan--uidKehamilan-', this);">
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-kehamilan--uidKehamilan-', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PUTapi-kehamilan-kehamilan--uidKehamilan-"
-                    onclick="tryItOut('PUTapi-kehamilan-kehamilan--uidKehamilan-');">Try it out ⚡
+                    id="btn-tryout-PUTapi-kehamilan--uidKehamilan-"
+                    onclick="tryItOut('PUTapi-kehamilan--uidKehamilan-');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PUTapi-kehamilan-kehamilan--uidKehamilan-"
-                    onclick="cancelTryOut('PUTapi-kehamilan-kehamilan--uidKehamilan-');" hidden>Cancel 🛑
+                    id="btn-canceltryout-PUTapi-kehamilan--uidKehamilan-"
+                    onclick="cancelTryOut('PUTapi-kehamilan--uidKehamilan-');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PUTapi-kehamilan-kehamilan--uidKehamilan-" hidden>Send Request 💥
+                    id="btn-executetryout-PUTapi-kehamilan--uidKehamilan-" hidden>Send Request 💥
             </button>
             </h3>
             <p>
             <small class="badge badge-darkblue">PUT</small>
-            <b><code>api/kehamilan/kehamilan/{uidKehamilan}</code></b>
+            <b><code>api/kehamilan/{uidKehamilan}</code></b>
         </p>
-                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                <p>
+            <label id="auth-PUTapi-kehamilan--uidKehamilan-" hidden>Authorization header:
+                <b><code>Bearer </code></b><input type="text"
+                                                                name="Authorization"
+                                                                data-prefix="Bearer "
+                                                                data-endpoint="PUTapi-kehamilan--uidKehamilan-"
+                                                                data-component="header"></label>
+        </p>
+                <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
                     <p>
-                <b><code>uidKehamilan</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
-                <input type="number"
+                <b><code>uidKehamilan</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
                name="uidKehamilan"
-               data-endpoint="PUTapi-kehamilan-kehamilan--uidKehamilan-"
-               value="4"
+               data-endpoint="PUTapi-kehamilan--uidKehamilan-"
+               value="quia"
                data-component="url" hidden>
     <br>
-
+<p>berupa unique id record (uuid) dari kehamilan</p>
             </p>
-                    </form>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>kehamilan_ke</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="kehamilan_ke"
+               data-endpoint="PUTapi-kehamilan--uidKehamilan-"
+               value="18"
+               data-component="body" hidden>
+    <br>
 
-            <h2 id="endpoints-DELETEapi-kehamilan-kehamilan--uidKehamilan-">Remove the specified resource from storage.</h2>
+        </p>
+                <p>
+            <b><code>hari_pertama_haid</code></b>&nbsp;&nbsp;<small>date</small>  &nbsp;
+                <input type="text"
+               name="hari_pertama_haid"
+               data-endpoint="PUTapi-kehamilan--uidKehamilan-"
+               value="est"
+               data-component="body" hidden>
+    <br>
+<p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
+<p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
+        </p>
+        </form>
+
+            <h2 id="endpoints-DELETEapi-kehamilan--uidKehamilan-">Hapus kehamilan</h2>
 
 <p>
+<small class="badge badge-darkred">requires authentication</small>
 </p>
 
 
 
-<span id="example-requests-DELETEapi-kehamilan-kehamilan--uidKehamilan-">
+<span id="example-requests-DELETEapi-kehamilan--uidKehamilan-">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/kehamilan/kehamilan/4" \
+    "http://localhost/api/kehamilan/autem" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/kehamilan/kehamilan/4"
+    "http://localhost/api/kehamilan/autem"
 );
 
 const headers = {
@@ -1943,57 +1995,428 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-DELETEapi-kehamilan-kehamilan--uidKehamilan-">
+<span id="example-responses-DELETEapi-kehamilan--uidKehamilan-">
 </span>
-<span id="execution-results-DELETEapi-kehamilan-kehamilan--uidKehamilan-" hidden>
+<span id="execution-results-DELETEapi-kehamilan--uidKehamilan-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-DELETEapi-kehamilan-kehamilan--uidKehamilan-"></span>:
+                id="execution-response-status-DELETEapi-kehamilan--uidKehamilan-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEapi-kehamilan-kehamilan--uidKehamilan-"></code></pre>
+    <pre class="json"><code id="execution-response-content-DELETEapi-kehamilan--uidKehamilan-"></code></pre>
 </span>
-<span id="execution-error-DELETEapi-kehamilan-kehamilan--uidKehamilan-" hidden>
+<span id="execution-error-DELETEapi-kehamilan--uidKehamilan-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEapi-kehamilan-kehamilan--uidKehamilan-"></code></pre>
+    <pre><code id="execution-error-message-DELETEapi-kehamilan--uidKehamilan-"></code></pre>
 </span>
-<form id="form-DELETEapi-kehamilan-kehamilan--uidKehamilan-" data-method="DELETE"
-      data-path="api/kehamilan/kehamilan/{uidKehamilan}"
+<form id="form-DELETEapi-kehamilan--uidKehamilan-" data-method="DELETE"
+      data-path="api/kehamilan/{uidKehamilan}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-kehamilan--uidKehamilan-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-kehamilan--uidKehamilan-"
+                    onclick="tryItOut('DELETEapi-kehamilan--uidKehamilan-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-kehamilan--uidKehamilan-"
+                    onclick="cancelTryOut('DELETEapi-kehamilan--uidKehamilan-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-kehamilan--uidKehamilan-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/kehamilan/{uidKehamilan}</code></b>
+        </p>
+                <p>
+            <label id="auth-DELETEapi-kehamilan--uidKehamilan-" hidden>Authorization header:
+                <b><code>Bearer </code></b><input type="text"
+                                                                name="Authorization"
+                                                                data-prefix="Bearer "
+                                                                data-endpoint="DELETEapi-kehamilan--uidKehamilan-"
+                                                                data-component="header"></label>
+        </p>
+                <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>uidKehamilan</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="uidKehamilan"
+               data-endpoint="DELETEapi-kehamilan--uidKehamilan-"
+               value="autem"
+               data-component="url" hidden>
+    <br>
+<p>berupa unique id record (uuid) dari kehamilan</p>
+<p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
+<p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
+            </p>
+                    </form>
+
+            <h2 id="endpoints-GETapi-history_kehamilan--uuidKehamilan-">Show all kehamilan</h2>
+
+<p>
+</p>
+
+<p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
+<p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
+
+<span id="example-requests-GETapi-history_kehamilan--uuidKehamilan-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/history_kehamilan/8" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/history_kehamilan/8"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-history_kehamilan--uuidKehamilan-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-history_kehamilan--uuidKehamilan-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-history_kehamilan--uuidKehamilan-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-history_kehamilan--uuidKehamilan-"></code></pre>
+</span>
+<span id="execution-error-GETapi-history_kehamilan--uuidKehamilan-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-history_kehamilan--uuidKehamilan-"></code></pre>
+</span>
+<form id="form-GETapi-history_kehamilan--uuidKehamilan-" data-method="GET"
+      data-path="api/history_kehamilan/{uuidKehamilan}"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-kehamilan-kehamilan--uidKehamilan-', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-history_kehamilan--uuidKehamilan-', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-DELETEapi-kehamilan-kehamilan--uidKehamilan-"
-                    onclick="tryItOut('DELETEapi-kehamilan-kehamilan--uidKehamilan-');">Try it out ⚡
+                    id="btn-tryout-GETapi-history_kehamilan--uuidKehamilan-"
+                    onclick="tryItOut('GETapi-history_kehamilan--uuidKehamilan-');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-DELETEapi-kehamilan-kehamilan--uidKehamilan-"
-                    onclick="cancelTryOut('DELETEapi-kehamilan-kehamilan--uidKehamilan-');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-history_kehamilan--uuidKehamilan-"
+                    onclick="cancelTryOut('GETapi-history_kehamilan--uuidKehamilan-');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-DELETEapi-kehamilan-kehamilan--uidKehamilan-" hidden>Send Request 💥
+                    id="btn-executetryout-GETapi-history_kehamilan--uuidKehamilan-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/history_kehamilan/{uuidKehamilan}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>uuidKehamilan</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="uuidKehamilan"
+               data-endpoint="GETapi-history_kehamilan--uuidKehamilan-"
+               value="8"
+               data-component="url" hidden>
+    <br>
+
+            </p>
+                    </form>
+
+            <h2 id="endpoints-POSTapi-history_kehamilan--uuidKehamilan-">Tambah kehamilan</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-history_kehamilan--uuidKehamilan-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/history_kehamilan/13" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"jumlah_gerakan_janin\": 7,
+    \"waktu_pengukuran\": \"ut\",
+    \"lama_waktu_pengukuran\": 18
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/history_kehamilan/13"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "jumlah_gerakan_janin": 7,
+    "waktu_pengukuran": "ut",
+    "lama_waktu_pengukuran": 18
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-history_kehamilan--uuidKehamilan-">
+</span>
+<span id="execution-results-POSTapi-history_kehamilan--uuidKehamilan-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-history_kehamilan--uuidKehamilan-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-history_kehamilan--uuidKehamilan-"></code></pre>
+</span>
+<span id="execution-error-POSTapi-history_kehamilan--uuidKehamilan-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-history_kehamilan--uuidKehamilan-"></code></pre>
+</span>
+<form id="form-POSTapi-history_kehamilan--uuidKehamilan-" data-method="POST"
+      data-path="api/history_kehamilan/{uuidKehamilan}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-history_kehamilan--uuidKehamilan-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-history_kehamilan--uuidKehamilan-"
+                    onclick="tryItOut('POSTapi-history_kehamilan--uuidKehamilan-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-history_kehamilan--uuidKehamilan-"
+                    onclick="cancelTryOut('POSTapi-history_kehamilan--uuidKehamilan-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-history_kehamilan--uuidKehamilan-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/history_kehamilan/{uuidKehamilan}</code></b>
+        </p>
+                <p>
+            <label id="auth-POSTapi-history_kehamilan--uuidKehamilan-" hidden>Authorization header:
+                <b><code>Bearer </code></b><input type="text"
+                                                                name="Authorization"
+                                                                data-prefix="Bearer "
+                                                                data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
+                                                                data-component="header"></label>
+        </p>
+                <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>uuidKehamilan</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="uuidKehamilan"
+               data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
+               value="13"
+               data-component="url" hidden>
+    <br>
+
+            </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>jumlah_gerakan_janin</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="jumlah_gerakan_janin"
+               data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
+               value="7"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>waktu_pengukuran</code></b>&nbsp;&nbsp;<small>date</small>  &nbsp;
+                <input type="text"
+               name="waktu_pengukuran"
+               data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
+               value="ut"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>lama_waktu_pengukuran</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="lama_waktu_pengukuran"
+               data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
+               value="18"
+               data-component="body" hidden>
+    <br>
+<p>lama waktu pengukuran dalam satuan detik</p>
+<p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
+<p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
+        </p>
+        </form>
+
+            <h2 id="endpoints-DELETEapi-history_kehamilan--uidKehamilan-">Hapus kehamilan</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-history_kehamilan--uidKehamilan-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost/api/history_kehamilan/10" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/history_kehamilan/10"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-history_kehamilan--uidKehamilan-">
+</span>
+<span id="execution-results-DELETEapi-history_kehamilan--uidKehamilan-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-history_kehamilan--uidKehamilan-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-history_kehamilan--uidKehamilan-"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-history_kehamilan--uidKehamilan-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-history_kehamilan--uidKehamilan-"></code></pre>
+</span>
+<form id="form-DELETEapi-history_kehamilan--uidKehamilan-" data-method="DELETE"
+      data-path="api/history_kehamilan/{uidKehamilan}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-history_kehamilan--uidKehamilan-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-history_kehamilan--uidKehamilan-"
+                    onclick="tryItOut('DELETEapi-history_kehamilan--uidKehamilan-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-history_kehamilan--uidKehamilan-"
+                    onclick="cancelTryOut('DELETEapi-history_kehamilan--uidKehamilan-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-history_kehamilan--uidKehamilan-" hidden>Send Request 💥
             </button>
             </h3>
             <p>
             <small class="badge badge-red">DELETE</small>
-            <b><code>api/kehamilan/kehamilan/{uidKehamilan}</code></b>
+            <b><code>api/history_kehamilan/{uidKehamilan}</code></b>
         </p>
-                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                <p>
+            <label id="auth-DELETEapi-history_kehamilan--uidKehamilan-" hidden>Authorization header:
+                <b><code>Bearer </code></b><input type="text"
+                                                                name="Authorization"
+                                                                data-prefix="Bearer "
+                                                                data-endpoint="DELETEapi-history_kehamilan--uidKehamilan-"
+                                                                data-component="header"></label>
+        </p>
+                <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
                     <p>
                 <b><code>uidKehamilan</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
                 <input type="number"
                name="uidKehamilan"
-               data-endpoint="DELETEapi-kehamilan-kehamilan--uidKehamilan-"
-               value="4"
+               data-endpoint="DELETEapi-history_kehamilan--uidKehamilan-"
+               value="10"
                data-component="url" hidden>
     <br>
 
+            </p>
+                    <p>
+                <b><code>uuidHistoryKehamilan</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="uuidHistoryKehamilan"
+               data-endpoint="DELETEapi-history_kehamilan--uidKehamilan-"
+               value="nesciunt"
+               data-component="url" hidden>
+    <br>
+<p>berupa unique id record (uuid) dari history kehamilan</p>
+<p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
+<p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
             </p>
                     </form>
 

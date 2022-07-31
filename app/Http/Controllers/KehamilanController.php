@@ -72,4 +72,57 @@ class KehamilanController extends Controller
         if($data)  return $this->success($data,'Berhasil');
         else return response()->noContent();
     }
+
+     /**
+     * Update kehamilan
+     * @authenticated
+     * @urlParam uidKehamilan string required berupa unique id record (uuid) dari kehamilan
+     * @bodyParam kehamilan_ke int required
+     * @bodyParam hari_pertama_haid date required
+     *
+     * Check that the service is up. If everything is okay, you'll get a 200 OK response.
+     *
+     * Otherwise, the request will fail with a 400 error, and a response listing the failed services.
+     **/
+    public function update(String $UUIDKehamilan,KehamilanRequest $request){
+        $request->validated();
+         // Retrieve a portion of the validated input data...
+        try{
+            $data=Kehamilan::where('uuid',$UUIDKehamilan);
+            $data->kehamilan_ke=$request->kehamilan_ke;
+            $data->hari_pertama_haid=$request->hari_pertama_haid;
+        }catch (\Exception $exception) {
+            logger()->error($exception);
+            $defaultRoute = $this->controllerName.'.edit';
+           $respon= ['response'=>[
+                'metadata'=>['message'=>'Data gagal diupdate'.substr($exception,0,100).'...','code'=>$this->errorStatus],
+            ]];
+
+        }
+        return $this->success($data,'Berhasil');
+    }
+     /**
+     * Hapus kehamilan
+     * @authenticated
+     * @urlParam uidKehamilan string required berupa unique id record (uuid) dari kehamilan
+     *
+     * Check that the service is up. If everything is okay, you'll get a 200 OK response.
+     *
+     * Otherwise, the request will fail with a 400 error, and a response listing the failed services.
+     **/
+    public function destroy(String $UUIDKehamilan){
+         // Retrieve a portion of the validated input data...
+        try{
+            $data=Kehamilan::where('uuid',$UUIDKehamilan)->delete();
+
+        }catch (\Exception $exception) {
+            logger()->error($exception);
+            $defaultRoute = $this->controllerName.'.edit';
+           $respon= ['response'=>[
+                'metadata'=>['message'=>'Data gagal dihapus'.substr($exception,0,100).'...','code'=>$this->errorStatus],
+            ]];
+
+        }
+        return $this->success($data,'Berhasil');
+    }
 }
