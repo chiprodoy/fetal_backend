@@ -22,6 +22,7 @@ class HistoryKehamilanController extends Controller
      * Show  history kehamilan
      *
      * Check that the service is up. If everything is okay, you'll get a 200 OK response.
+     * @urlParam uuidKehamilan string required uuid pada record kehamilan
      *
      * Otherwise, the request will fail with a 400 error, and a response listing the failed services.
      **/
@@ -52,6 +53,7 @@ class HistoryKehamilanController extends Controller
      /**
      * Tambah history kehamilan
      * @authenticated
+     * @urlParam uuidKehamilan string required uuid pada record kehamilan
      * @bodyParam jumlah_gerakan_janin int required
      * @bodyParam waktu_pengukuran date required
      * @bodyParam lama_waktu_pengukuran int required lama waktu pengukuran dalam satuan detik
