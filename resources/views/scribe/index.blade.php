@@ -122,6 +122,15 @@
                                     <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-history_kehamilan--uidKehamilan-">
                         <a href="#endpoints-DELETEapi-history_kehamilan--uidKehamilan-">Hapus history kehamilan</a>
                     </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-media">
+                        <a href="#endpoints-GETapi-media">Display a listing of the resource.</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-media--slug-">
+                        <a href="#endpoints-GETapi-media--slug-">Show a POST by slug</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-media-category--slug-">
+                        <a href="#endpoints-GETapi-media-category--slug-">Show all POST by kategori</a>
+                    </li>
                                                     </ul>
                             </ul>
         
@@ -134,7 +143,7 @@
                             <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
                     </ul>
         <ul class="toc-footer" id="last-updated">
-        <li>Last updated: July 31 2022</li>
+        <li>Last updated: August 2 2022</li>
     </ul>
 </div>
 
@@ -174,14 +183,14 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"analpvppfmoeifukcfakfxlbpxtiuadsdqdrpsztywgemzouygxxxdjhiesenmolxliugcvfsntuhzzmbogonykzhjtnmtvvivpcltadruxvwlhihshsesegrhqt\",
-    \"email\": \"yzyjmwsodotiknullrkqzggbywnriwfzdfipckiosohnttcdwjocirvxwcioakbvrxaitlzebshwlojfssmutmdjtkxnlwursilwggnfsalbrzfmmlxgig\",
-    \"password\": \"nemo\",
-    \"tempat_lahir\": \"voluptatem\",
-    \"tgl_lahir\": \"2022-07-31T05:37:07\",
-    \"pekerjaan\": \"aperiam\",
-    \"pendidikan\": \"id\",
-    \"jumlah_anak\": 383764741.1
+    \"name\": \"ubbkxyvugrtzopqaefz\",
+    \"email\": \"moksdhkphzhccjzmqzoggkrpeqwwjplwilpxmhfxxkuogbvqeuysesltuupgwmfhbqawlliwrttaoqeszwhmagnvvxdbuqeibuqtzmwdfmecrksewgnbjkjmtlcfezzqhehzazismvkbdlzcdxzwwjndpzohoaynkfpenqihfnkiitdxczvojeypryavqhuqjrwcmbttxhqpevczpaectgifxtzagwotqsfndfifcqtf\",
+    \"password\": \"commodi\",
+    \"tempat_lahir\": \"voluptatibus\",
+    \"tgl_lahir\": \"2022-08-02T22:29:09\",
+    \"pekerjaan\": \"dignissimos\",
+    \"pendidikan\": \"tempore\",
+    \"jumlah_anak\": 42205412
 }"
 </code></pre></div>
 
@@ -197,14 +206,14 @@ const headers = {
 };
 
 let body = {
-    "name": "analpvppfmoeifukcfakfxlbpxtiuadsdqdrpsztywgemzouygxxxdjhiesenmolxliugcvfsntuhzzmbogonykzhjtnmtvvivpcltadruxvwlhihshsesegrhqt",
-    "email": "yzyjmwsodotiknullrkqzggbywnriwfzdfipckiosohnttcdwjocirvxwcioakbvrxaitlzebshwlojfssmutmdjtkxnlwursilwggnfsalbrzfmmlxgig",
-    "password": "nemo",
-    "tempat_lahir": "voluptatem",
-    "tgl_lahir": "2022-07-31T05:37:07",
-    "pekerjaan": "aperiam",
-    "pendidikan": "id",
-    "jumlah_anak": 383764741.1
+    "name": "ubbkxyvugrtzopqaefz",
+    "email": "moksdhkphzhccjzmqzoggkrpeqwwjplwilpxmhfxxkuogbvqeuysesltuupgwmfhbqawlliwrttaoqeszwhmagnvvxdbuqeibuqtzmwdfmecrksewgnbjkjmtlcfezzqhehzazismvkbdlzcdxzwwjndpzohoaynkfpenqihfnkiitdxczvojeypryavqhuqjrwcmbttxhqpevczpaectgifxtzagwotqsfndfifcqtf",
+    "password": "commodi",
+    "tempat_lahir": "voluptatibus",
+    "tgl_lahir": "2022-08-02T22:29:09",
+    "pekerjaan": "dignissimos",
+    "pendidikan": "tempore",
+    "jumlah_anak": 42205412
 };
 
 fetch(url, {
@@ -262,7 +271,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-register"
-               value="analpvppfmoeifukcfakfxlbpxtiuadsdqdrpsztywgemzouygxxxdjhiesenmolxliugcvfsntuhzzmbogonykzhjtnmtvvivpcltadruxvwlhihshsesegrhqt"
+               value="ubbkxyvugrtzopqaefz"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255 characters.</p>
@@ -272,7 +281,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-register"
-               value="yzyjmwsodotiknullrkqzggbywnriwfzdfipckiosohnttcdwjocirvxwcioakbvrxaitlzebshwlojfssmutmdjtkxnlwursilwggnfsalbrzfmmlxgig"
+               value="moksdhkphzhccjzmqzoggkrpeqwwjplwilpxmhfxxkuogbvqeuysesltuupgwmfhbqawlliwrttaoqeszwhmagnvvxdbuqeibuqtzmwdfmecrksewgnbjkjmtlcfezzqhehzazismvkbdlzcdxzwwjndpzohoaynkfpenqihfnkiitdxczvojeypryavqhuqjrwcmbttxhqpevczpaectgifxtzagwotqsfndfifcqtf"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -282,7 +291,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-register"
-               value="nemo"
+               value="commodi"
                data-component="body" hidden>
     <br>
 
@@ -292,7 +301,7 @@ fetch(url, {
                 <input type="text"
                name="tempat_lahir"
                data-endpoint="POSTapi-register"
-               value="voluptatem"
+               value="voluptatibus"
                data-component="body" hidden>
     <br>
 
@@ -302,7 +311,7 @@ fetch(url, {
                 <input type="text"
                name="tgl_lahir"
                data-endpoint="POSTapi-register"
-               value="2022-07-31T05:37:07"
+               value="2022-08-02T22:29:09"
                data-component="body" hidden>
     <br>
 <p>Must be a valid date.</p>
@@ -312,7 +321,7 @@ fetch(url, {
                 <input type="text"
                name="pekerjaan"
                data-endpoint="POSTapi-register"
-               value="aperiam"
+               value="dignissimos"
                data-component="body" hidden>
     <br>
 
@@ -322,7 +331,7 @@ fetch(url, {
                 <input type="text"
                name="pendidikan"
                data-endpoint="POSTapi-register"
-               value="id"
+               value="tempore"
                data-component="body" hidden>
     <br>
 
@@ -332,7 +341,7 @@ fetch(url, {
                 <input type="number"
                name="jumlah_anak"
                data-endpoint="POSTapi-register"
-               value="383764741.1"
+               value="42205412"
                data-component="body" hidden>
     <br>
 
@@ -356,8 +365,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"voluptatem\",
-    \"password\": \"culpa\"
+    \"email\": \"quia\",
+    \"password\": \"non\"
 }"
 </code></pre></div>
 
@@ -373,8 +382,8 @@ const headers = {
 };
 
 let body = {
-    "email": "voluptatem",
-    "password": "culpa"
+    "email": "quia",
+    "password": "non"
 };
 
 fetch(url, {
@@ -432,7 +441,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-login"
-               value="voluptatem"
+               value="quia"
                data-component="body" hidden>
     <br>
 
@@ -442,7 +451,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-login"
-               value="culpa"
+               value="non"
                data-component="body" hidden>
     <br>
 
@@ -466,7 +475,7 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"mathew81@example.net\"
+    \"email\": \"jefferey70@example.net\"
 }"
 </code></pre></div>
 
@@ -482,7 +491,7 @@ const headers = {
 };
 
 let body = {
-    "email": "mathew81@example.net"
+    "email": "jefferey70@example.net"
 };
 
 fetch(url, {
@@ -540,7 +549,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-forgot-password"
-               value="mathew81@example.net"
+               value="jefferey70@example.net"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -564,9 +573,9 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"token\": \"modi\",
-    \"email\": \"vhayes@example.org\",
-    \"password\": \"distinctio\"
+    \"token\": \"quis\",
+    \"email\": \"larson.dedrick@example.com\",
+    \"password\": \"eos\"
 }"
 </code></pre></div>
 
@@ -582,9 +591,9 @@ const headers = {
 };
 
 let body = {
-    "token": "modi",
-    "email": "vhayes@example.org",
-    "password": "distinctio"
+    "token": "quis",
+    "email": "larson.dedrick@example.com",
+    "password": "eos"
 };
 
 fetch(url, {
@@ -642,7 +651,7 @@ fetch(url, {
                 <input type="text"
                name="token"
                data-endpoint="POSTapi-reset-password"
-               value="modi"
+               value="quis"
                data-component="body" hidden>
     <br>
 
@@ -652,7 +661,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-reset-password"
-               value="vhayes@example.org"
+               value="larson.dedrick@example.com"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -662,7 +671,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-reset-password"
-               value="distinctio"
+               value="eos"
                data-component="body" hidden>
     <br>
 
@@ -812,7 +821,7 @@ fetch(url, {
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 56
+x-ratelimit-remaining: 55
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
@@ -1346,19 +1355,21 @@ fetch(url, {
 
 <span id="example-responses-GETapi-post">
             <blockquote>
-            <p>Example response (204):</p>
+            <p>Example response (401):</p>
         </blockquote>
                 <details class="annotation">
             <summary>
                 <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
-x-ratelimit-limit: 60
-x-ratelimit-remaining: 59
+content-type: application/json
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
-<code>[Empty response]</code>
+
+<code class="language-json">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
  </pre>
     </span>
 <span id="execution-results-GETapi-post" hidden>
@@ -1416,14 +1427,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/post/category/optio" \
+    --get "http://localhost/api/post/category/aperiam" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/post/category/optio"
+    "http://localhost/api/post/category/aperiam"
 );
 
 const headers = {
@@ -1448,7 +1459,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 58
+x-ratelimit-remaining: 59
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
@@ -1500,7 +1511,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="slug"
                data-endpoint="GETapi-post-category--slug-"
-               value="optio"
+               value="aperiam"
                data-component="url" hidden>
     <br>
 <p>The slug of the category.</p>
@@ -1521,14 +1532,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/post/15" \
+    --get "http://localhost/api/post/13" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/post/15"
+    "http://localhost/api/post/13"
 );
 
 const headers = {
@@ -1553,7 +1564,7 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 57
+x-ratelimit-remaining: 58
 access-control-allow-origin: *
  </code></pre>
         </details>         <pre>
@@ -1605,7 +1616,7 @@ access-control-allow-origin: *
                 <input type="number"
                name="slug"
                data-endpoint="GETapi-post--slug-"
-               value="15"
+               value="13"
                data-component="url" hidden>
     <br>
 <p>The slug of the post.</p>
@@ -1726,8 +1737,8 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"kehamilan_ke\": 13,
-    \"hari_pertama_haid\": \"cum\"
+    \"kehamilan_ke\": 18,
+    \"hari_pertama_haid\": \"quo\"
 }"
 </code></pre></div>
 
@@ -1743,8 +1754,8 @@ const headers = {
 };
 
 let body = {
-    "kehamilan_ke": 13,
-    "hari_pertama_haid": "cum"
+    "kehamilan_ke": 18,
+    "hari_pertama_haid": "quo"
 };
 
 fetch(url, {
@@ -1810,7 +1821,7 @@ fetch(url, {
                 <input type="number"
                name="kehamilan_ke"
                data-endpoint="POSTapi-kehamilan"
-               value="13"
+               value="18"
                data-component="body" hidden>
     <br>
 
@@ -1820,7 +1831,7 @@ fetch(url, {
                 <input type="text"
                name="hari_pertama_haid"
                data-endpoint="POSTapi-kehamilan"
-               value="cum"
+               value="quo"
                data-component="body" hidden>
     <br>
 <p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
@@ -1842,19 +1853,19 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/kehamilan/in" \
+    "http://localhost/api/kehamilan/quaerat" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"kehamilan_ke\": 6,
-    \"hari_pertama_haid\": \"at\"
+    \"kehamilan_ke\": 19,
+    \"hari_pertama_haid\": \"suscipit\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/kehamilan/in"
+    "http://localhost/api/kehamilan/quaerat"
 );
 
 const headers = {
@@ -1863,8 +1874,8 @@ const headers = {
 };
 
 let body = {
-    "kehamilan_ke": 6,
-    "hari_pertama_haid": "at"
+    "kehamilan_ke": 19,
+    "hari_pertama_haid": "suscipit"
 };
 
 fetch(url, {
@@ -1930,7 +1941,7 @@ fetch(url, {
                 <input type="text"
                name="uidKehamilan"
                data-endpoint="PUTapi-kehamilan--uidKehamilan-"
-               value="in"
+               value="quaerat"
                data-component="url" hidden>
     <br>
 <p>berupa unique id record (uuid) dari kehamilan</p>
@@ -1941,7 +1952,7 @@ fetch(url, {
                 <input type="number"
                name="kehamilan_ke"
                data-endpoint="PUTapi-kehamilan--uidKehamilan-"
-               value="6"
+               value="19"
                data-component="body" hidden>
     <br>
 
@@ -1951,7 +1962,7 @@ fetch(url, {
                 <input type="text"
                name="hari_pertama_haid"
                data-endpoint="PUTapi-kehamilan--uidKehamilan-"
-               value="at"
+               value="suscipit"
                data-component="body" hidden>
     <br>
 <p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
@@ -1973,14 +1984,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/kehamilan/quis" \
+    "http://localhost/api/kehamilan/veritatis" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/kehamilan/quis"
+    "http://localhost/api/kehamilan/veritatis"
 );
 
 const headers = {
@@ -2050,7 +2061,7 @@ fetch(url, {
                 <input type="text"
                name="uidKehamilan"
                data-endpoint="DELETEapi-kehamilan--uidKehamilan-"
-               value="quis"
+               value="veritatis"
                data-component="url" hidden>
     <br>
 <p>berupa unique id record (uuid) dari kehamilan</p>
@@ -2072,14 +2083,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/history_kehamilan/ut" \
+    --get "http://localhost/api/history_kehamilan/eius" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/history_kehamilan/ut"
+    "http://localhost/api/history_kehamilan/eius"
 );
 
 const headers = {
@@ -2158,7 +2169,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="uuidKehamilan"
                data-endpoint="GETapi-history_kehamilan--uuidKehamilan-"
-               value="ut"
+               value="eius"
                data-component="url" hidden>
     <br>
 <p>uuid pada record kehamilan</p>
@@ -2180,20 +2191,20 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/history_kehamilan/sit" \
+    "http://localhost/api/history_kehamilan/quisquam" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"jumlah_gerakan_janin\": 8,
-    \"waktu_pengukuran\": \"adipisci\",
-    \"lama_waktu_pengukuran\": 14
+    \"jumlah_gerakan_janin\": 5,
+    \"waktu_pengukuran\": \"reiciendis\",
+    \"lama_waktu_pengukuran\": 2
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/history_kehamilan/sit"
+    "http://localhost/api/history_kehamilan/quisquam"
 );
 
 const headers = {
@@ -2202,9 +2213,9 @@ const headers = {
 };
 
 let body = {
-    "jumlah_gerakan_janin": 8,
-    "waktu_pengukuran": "adipisci",
-    "lama_waktu_pengukuran": 14
+    "jumlah_gerakan_janin": 5,
+    "waktu_pengukuran": "reiciendis",
+    "lama_waktu_pengukuran": 2
 };
 
 fetch(url, {
@@ -2270,7 +2281,7 @@ fetch(url, {
                 <input type="text"
                name="uuidKehamilan"
                data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
-               value="sit"
+               value="quisquam"
                data-component="url" hidden>
     <br>
 <p>uuid pada record kehamilan</p>
@@ -2281,7 +2292,7 @@ fetch(url, {
                 <input type="number"
                name="jumlah_gerakan_janin"
                data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
-               value="8"
+               value="5"
                data-component="body" hidden>
     <br>
 
@@ -2291,7 +2302,7 @@ fetch(url, {
                 <input type="text"
                name="waktu_pengukuran"
                data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
-               value="adipisci"
+               value="reiciendis"
                data-component="body" hidden>
     <br>
 
@@ -2301,7 +2312,7 @@ fetch(url, {
                 <input type="number"
                name="lama_waktu_pengukuran"
                data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
-               value="14"
+               value="2"
                data-component="body" hidden>
     <br>
 <p>lama waktu pengukuran dalam satuan detik</p>
@@ -2324,14 +2335,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/history_kehamilan/20" \
+    "http://localhost/api/history_kehamilan/16" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/history_kehamilan/20"
+    "http://localhost/api/history_kehamilan/16"
 );
 
 const headers = {
@@ -2401,7 +2412,7 @@ fetch(url, {
                 <input type="number"
                name="uidKehamilan"
                data-endpoint="DELETEapi-history_kehamilan--uidKehamilan-"
-               value="20"
+               value="16"
                data-component="url" hidden>
     <br>
 
@@ -2411,12 +2422,317 @@ fetch(url, {
                 <input type="text"
                name="uuidHistoryKehamilan"
                data-endpoint="DELETEapi-history_kehamilan--uidKehamilan-"
-               value="eius"
+               value="id"
                data-component="url" hidden>
     <br>
 <p>berupa unique id record (uuid) dari history kehamilan</p>
 <p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
 <p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
+            </p>
+                    </form>
+
+            <h2 id="endpoints-GETapi-media">Display a listing of the resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-media">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/media" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/media"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-media">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-media" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-media"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-media"></code></pre>
+</span>
+<span id="execution-error-GETapi-media" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-media"></code></pre>
+</span>
+<form id="form-GETapi-media" data-method="GET"
+      data-path="api/media"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-media', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-media"
+                    onclick="tryItOut('GETapi-media');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-media"
+                    onclick="cancelTryOut('GETapi-media');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-media" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/media</code></b>
+        </p>
+                    </form>
+
+            <h2 id="endpoints-GETapi-media--slug-">Show a POST by slug</h2>
+
+<p>
+</p>
+
+<p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
+<p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
+
+<span id="example-requests-GETapi-media--slug-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/media/sunt" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/media/sunt"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-media--slug-">
+            <blockquote>
+            <p>Example response (204):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 56
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+<code>[Empty response]</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-media--slug-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-media--slug-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-media--slug-"></code></pre>
+</span>
+<span id="execution-error-GETapi-media--slug-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-media--slug-"></code></pre>
+</span>
+<form id="form-GETapi-media--slug-" data-method="GET"
+      data-path="api/media/{slug}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-media--slug-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-media--slug-"
+                    onclick="tryItOut('GETapi-media--slug-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-media--slug-"
+                    onclick="cancelTryOut('GETapi-media--slug-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-media--slug-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/media/{slug}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>slug</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="slug"
+               data-endpoint="GETapi-media--slug-"
+               value="sunt"
+               data-component="url" hidden>
+    <br>
+<p>The slug of the medium.</p>
+            </p>
+                    </form>
+
+            <h2 id="endpoints-GETapi-media-category--slug-">Show all POST by kategori</h2>
+
+<p>
+</p>
+
+<p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
+<p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
+
+<span id="example-requests-GETapi-media-category--slug-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/media/category/quo" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/media/category/quo"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-media-category--slug-">
+            <blockquote>
+            <p>Example response (204):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 57
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+<code>[Empty response]</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-media-category--slug-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-media-category--slug-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-media-category--slug-"></code></pre>
+</span>
+<span id="execution-error-GETapi-media-category--slug-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-media-category--slug-"></code></pre>
+</span>
+<form id="form-GETapi-media-category--slug-" data-method="GET"
+      data-path="api/media/category/{slug}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-media-category--slug-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-media-category--slug-"
+                    onclick="tryItOut('GETapi-media-category--slug-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-media-category--slug-"
+                    onclick="cancelTryOut('GETapi-media-category--slug-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-media-category--slug-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/media/category/{slug}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>slug</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="slug"
+               data-endpoint="GETapi-media-category--slug-"
+               value="quo"
+               data-component="url" hidden>
+    <br>
+<p>The slug of the category.</p>
             </p>
                     </form>
 

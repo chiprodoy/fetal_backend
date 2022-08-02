@@ -22,56 +22,56 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: analpvppfmoeifukcfakfxlbpxtiuadsdqdrpsztywgemzouygxxxdjhiesenmolxliugcvfsntuhzzmbogonykzhjtnmtvvivpcltadruxvwlhihshsesegrhqt
+        example: ubbkxyvugrtzopqaefz
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: yzyjmwsodotiknullrkqzggbywnriwfzdfipckiosohnttcdwjocirvxwcioakbvrxaitlzebshwlojfssmutmdjtkxnlwursilwggnfsalbrzfmmlxgig
+        example: moksdhkphzhccjzmqzoggkrpeqwwjplwilpxmhfxxkuogbvqeuysesltuupgwmfhbqawlliwrttaoqeszwhmagnvvxdbuqeibuqtzmwdfmecrksewgnbjkjmtlcfezzqhehzazismvkbdlzcdxzwwjndpzohoaynkfpenqihfnkiitdxczvojeypryavqhuqjrwcmbttxhqpevczpaectgifxtzagwotqsfndfifcqtf
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: nemo
+        example: commodi
         type: string
         custom: []
       tempat_lahir:
         name: tempat_lahir
         description: ''
         required: true
-        example: voluptatem
+        example: voluptatibus
         type: string
         custom: []
       tgl_lahir:
         name: tgl_lahir
         description: 'Must be a valid date.'
         required: true
-        example: '2022-07-31T05:37:07'
+        example: '2022-08-02T22:29:09'
         type: string
         custom: []
       pekerjaan:
         name: pekerjaan
         description: ''
         required: true
-        example: aperiam
+        example: dignissimos
         type: string
         custom: []
       pendidikan:
         name: pendidikan
         description: ''
         required: true
-        example: id
+        example: tempore
         type: string
         custom: []
       jumlah_anak:
         name: jumlah_anak
         description: ''
         required: true
-        example: 383764741.1
+        example: 42205412.0
         type: number
         custom: []
     responses: []
@@ -95,14 +95,14 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: voluptatem
+        example: quia
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: culpa
+        example: non
         type: string
         custom: []
     responses: []
@@ -126,7 +126,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: mathew81@example.net
+        example: jefferey70@example.net
         type: string
         custom: []
     responses: []
@@ -150,21 +150,21 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: modi
+        example: quis
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: vhayes@example.org
+        example: larson.dedrick@example.com
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: distinctio
+        example: eos
         type: string
         custom: []
     responses: []
@@ -672,7 +672,7 @@ endpoints:
           cache-control: 'no-cache, private'
           content-type: application/json
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '56'
+          x-ratelimit-remaining: '55'
           access-control-allow-origin: '*'
         description: null
     responseFields: []
@@ -693,12 +693,11 @@ endpoints:
     bodyParameters: []
     responses:
       -
-        status: 204
-        content: ''
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '59'
+          content-type: application/json
           access-control-allow-origin: '*'
         description: null
     responseFields: []
@@ -722,7 +721,7 @@ endpoints:
         name: slug
         description: 'The slug of the category.'
         required: true
-        example: optio
+        example: aperiam
         type: string
         custom: []
     queryParameters: []
@@ -734,7 +733,7 @@ endpoints:
         headers:
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '58'
+          x-ratelimit-remaining: '59'
           access-control-allow-origin: '*'
         description: null
     responseFields: []
@@ -758,7 +757,7 @@ endpoints:
         name: slug
         description: 'The slug of the post.'
         required: true
-        example: 15
+        example: 13
         type: integer
         custom: []
     queryParameters: []
@@ -770,7 +769,7 @@ endpoints:
         headers:
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '57'
+          x-ratelimit-remaining: '58'
           access-control-allow-origin: '*'
         description: null
     responseFields: []
@@ -821,7 +820,7 @@ endpoints:
         name: kehamilan_ke
         description: ''
         required: true
-        example: 13
+        example: 18
         type: integer
         custom: []
       hari_pertama_haid:
@@ -831,7 +830,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: cum
+        example: quo
         type: date
         custom: []
     responses: []
@@ -853,7 +852,7 @@ endpoints:
         name: uidKehamilan
         description: 'berupa unique id record (uuid) dari kehamilan'
         required: true
-        example: in
+        example: quaerat
         type: string
         custom: []
     queryParameters: []
@@ -862,7 +861,7 @@ endpoints:
         name: kehamilan_ke
         description: ''
         required: true
-        example: 6
+        example: 19
         type: integer
         custom: []
       hari_pertama_haid:
@@ -872,7 +871,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: at
+        example: suscipit
         type: date
         custom: []
     responses: []
@@ -899,7 +898,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: quis
+        example: veritatis
         type: string
         custom: []
     queryParameters: []
@@ -926,7 +925,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: ut
+        example: eius
         type: string
         custom: []
     queryParameters: []
@@ -958,7 +957,7 @@ endpoints:
         name: uuidKehamilan
         description: 'uuid pada record kehamilan'
         required: true
-        example: sit
+        example: quisquam
         type: string
         custom: []
     queryParameters: []
@@ -967,14 +966,14 @@ endpoints:
         name: jumlah_gerakan_janin
         description: ''
         required: true
-        example: 8
+        example: 5
         type: integer
         custom: []
       waktu_pengukuran:
         name: waktu_pengukuran
         description: ''
         required: true
-        example: adipisci
+        example: reiciendis
         type: date
         custom: []
       lama_waktu_pengukuran:
@@ -986,7 +985,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: 14
+        example: 2
         type: integer
         custom: []
     responses: []
@@ -1008,7 +1007,7 @@ endpoints:
         name: uidKehamilan
         description: ''
         required: true
-        example: 20
+        example: 16
         type: integer
         custom: []
       uuidHistoryKehamilan:
@@ -1020,10 +1019,107 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: eius
+        example: id
         type: string
         custom: []
     queryParameters: []
     bodyParameters: []
     responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/media
+    metadata:
+      title: 'Display a listing of the resource.'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/media/{slug}'
+    metadata:
+      title: 'Show a POST by slug'
+      description: |-
+        Check that the service is up. If everything is okay, you'll get a 200 OK response.
+
+        Otherwise, the request will fail with a 400 error, and a response listing the failed services.
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      slug:
+        name: slug
+        description: 'The slug of the medium.'
+        required: true
+        example: sunt
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 204
+        content: ''
+        headers:
+          cache-control: 'no-cache, private'
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '56'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/media/category/{slug}'
+    metadata:
+      title: 'Show all POST by kategori'
+      description: |-
+        Check that the service is up. If everything is okay, you'll get a 200 OK response.
+
+        Otherwise, the request will fail with a 400 error, and a response listing the failed services.
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      slug:
+        name: slug
+        description: 'The slug of the category.'
+        required: true
+        example: quo
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 204
+        content: ''
+        headers:
+          cache-control: 'no-cache, private'
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '57'
+          access-control-allow-origin: '*'
+        description: null
     responseFields: []

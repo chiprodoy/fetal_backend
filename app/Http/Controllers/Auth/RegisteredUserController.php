@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use App\Http\Requests\Auth\RegisterUserRequest;
+use Exception;
+use Illuminate\Support\Facades\DB;
 use MF\Controllers\ApiResponse;
 class RegisteredUserController extends Controller
 {
@@ -47,24 +49,31 @@ class RegisteredUserController extends Controller
                 'jumlah_anak',
 
         ]);
+        DB::beginTransaction();
+        try{
+            $user = User::create(
+                [
+                    'name'=>$validated['name'],
+                    'email'=>$validated['email'],
+                    'password'=>$validated['password'],
+                    'tempat_lahir'=>$validated['tempat_lahir'],
+                    'tgl_lahir'=>$validated['tgl_lahir'],
+                    'pekerjaan'=>$validated['pekerjaan'],
+                    'pendidikan'=>$validated['pendidikan'],
+                    'jumlah_anak'=>$validated['jumlah_anak'],
+                    'uid'=>''
+                ]
+                );
 
-        $user = User::create(
-            [
-                'name'=>$validated['name'],
-                'email'=>$validated['email'],
-                'password'=>$validated['password'],
-                'tempat_lahir'=>$validated['tempat_lahir'],
-                'tgl_lahir'=>$validated['tgl_lahir'],
-                'pekerjaan'=>$validated['pekerjaan'],
-                'pendidikan'=>$validated['pendidikan'],
-                'jumlah_anak'=>$validated['jumlah_anak'],
-                'uid'=>''
-            ]
-            );
+            $user->roles()->attach(2,['user_modify'=>'su']);
 
-        $user->roles()->attach(2,['user_modify'=>'su']);
+            event(new Registered($user));
 
-        event(new Registered($user));
+        }catch(Exception $e){
+            DB::rollBack();
+            return $e->getMessage();
+        }
+        DB::commit();
         if($request->wantsJson()){
             return $this->success(null,'Pendaftaran Berhasil Silahkan Cek Email Untuk konfirmasi');
         }else{

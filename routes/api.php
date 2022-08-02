@@ -51,13 +51,21 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::prefix('post')->group(function(){
 
-    Route::get('/',[PostController::class,'index'])->name('post.index');
+    Route::get('/',[PostController::class,'index'])->middleware('auth:sanctum')->name('post.index');
 
     Route::get('/category/{slug}',[PostController::class,'indexByCategory'])->name('post.category');
 
     Route::get('/{slug}',[PostController::class,'show'])->name('post.show');
 
+});
 
+Route::prefix('media')->group(function(){
+
+    Route::get('/',[PostController::class,'index'])->middleware('auth:sanctum')->name('media.index');
+
+    Route::get('/category/{slug}',[PostController::class,'indexByCategory'])->name('media.category');
+
+    Route::get('/{slug}',[PostController::class,'show'])->name('media.show');
 
 });
 
