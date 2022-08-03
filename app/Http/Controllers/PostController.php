@@ -34,10 +34,7 @@ class PostController extends Controller
      * Otherwise, the request will fail with a 400 error, and a response listing the failed services.
      **/
     public function indexByCategory($slug){
-        $pc=Post::with(['categories'=>function($query)use($slug){
-            $query->where('slugs','=',$slug);
-
-        }])->where('post_status','publish');
+        $pc=Post::whereRelation('categories','slugs','=',$slug);
 
         if($pc->count())  return $this->success($pc->get(),'Berhasil');
         else return response()->noContent();
