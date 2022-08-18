@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FileController;
 use App\Http\Controllers\KehamilanController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,6 +23,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::get('file/{slug}',[FileController::class,'show'])->name('file.show');
 Route::resource('/kehamilan',KehamilanController::class);
 
 require __DIR__.'/auth.php';
