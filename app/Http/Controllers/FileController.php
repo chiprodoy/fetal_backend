@@ -12,6 +12,7 @@ class FileController extends Controller
     public function show($slug){
         $pc=Post::where('slug',$slug)->latest()->first();
         if($pc){
+
             if(Storage::exists($pc->multimedia)){
                 return Storage::download($pc->multimedia);
             }

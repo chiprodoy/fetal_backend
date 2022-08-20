@@ -13,6 +13,7 @@ use App\Http\Controllers\HistoryKehamilanController;
 use App\Http\Controllers\PostCategoryController;
 use App\Http\Controllers\PostController;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -98,3 +99,13 @@ Route::prefix('history_kehamilan')->middleware('auth:sanctum')->group(function()
 Route::prefix('post_category')->group(function(){
     Route::get('/',[PostCategoryController::class,'index'])->name('post_category.index');
 });
+
+Route::prefix('init')->group(function(){
+    Route::get('/storage',function(){
+        Artisan::call('storage:link');
+    });
+
+});
+
+
+
