@@ -11,13 +11,16 @@ class FileController extends Controller
     //
     public function show($slug){
         $pc=Post::where('slug',$slug)->latest()->first();
-        if($pc){
 
+        if (strpos($pc->multimedia,"http") === 0 ||  strpos($pc->multimedia, "https") === 0){
+            return file_get_contents($pc->multimedia);
+        }else{
+            return Storage::disk('local')->get($pc->multimedia);
             if(Storage::exists($pc->multimedia)){
                 return Storage::download($pc->multimedia);
             }
 
         }
-        else return response()->noContent();
+        return response()->noContent();
     }
 }

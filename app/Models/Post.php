@@ -4,10 +4,25 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Routing\Route;
 
 class Post extends Model
 {
     use HasFactory;
+
+    /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array
+     */
+    protected $appends = ['file_url'];
+
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = ['multimedia'];
 
     /**
      * The categories that belong to the post.
@@ -28,15 +43,13 @@ class Post extends Model
         return str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n"),"\n",$value);
     }
     /**
-     * Set the multimedia.
+     * Get url file.
      *
-     * @param  string  $value
-     * @return void
+     * @return bool
      */
-    public function getMultimediaAttribute($value)
+    public function getFileUrlAttribute()
     {
-        if (strpos($value, "http") === 0 ||  strpos($value, "https") === 0) return $value;
-        else return route('file.show',$this->slug);
+        return route('file.show',$this->slug);
     }
 
 }
