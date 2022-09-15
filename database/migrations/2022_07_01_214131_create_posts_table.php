@@ -21,6 +21,7 @@ class CreatePostsTable extends Migration
             $table->string('tags');
             $table->integer('view_count');
             $table->string('post_status'); // draft,publish
+            $table->string('post_type'); // blog,page,multimedia
             $table->string('slug');
             $table->timestamps();
             $table->softDeletes();

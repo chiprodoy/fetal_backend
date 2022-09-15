@@ -59,3 +59,10 @@ class PostStatus{
     const DRAFT='draft';
 
 }
+class PostType{
+    const BLOG='blog';
+    const PAGE='page';
+    const MULTIMEDIA='multimedia';
+
+
+}

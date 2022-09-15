@@ -100,6 +100,7 @@ Route::prefix('post_category')->group(function(){
     Route::get('/',[PostCategoryController::class,'index'])->name('post_category.index');
 });
 
+
 Route::prefix('init')->group(function(){
     Route::get('/storage',function(){
         Artisan::call('storage:link');
