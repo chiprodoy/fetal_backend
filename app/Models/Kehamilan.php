@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
@@ -62,7 +63,13 @@ class Kehamilan extends Model
      */
     public function getUsiaKehamilanAttribute($value)
     {
-        return 'xx';
+        $now  = Carbon::now();
+        $end  = Carbon::parse($this->hari_pertama_haid);
+        $usiaHari=$now->diffInDays($end);
+        $usiaMinggu=floor($usiaHari/7);
+        $sisaHari=$usiaHari % 7;
+        return $usiaMinggu." Minggu ".$sisaHari." Hari";
+
     }
     /**
      * Get the user that owns kehamilan.
