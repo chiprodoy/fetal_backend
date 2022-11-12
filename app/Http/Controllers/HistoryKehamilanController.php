@@ -2,16 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\DailyGraphRequest;
 use App\Http\Requests\HistoryKehamilanRequest;
 use App\Http\Requests\KehamilanRequest;
+use App\Http\Requests\WeeklyGraphRequest;
 use App\Models\HistoryKehamilan;
 use App\Models\Kehamilan;
 use App\Models\RoleName;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use MF\Controllers\ControllerResources;
 use MF\Controllers\ApiResponse;
 use MF\Controllers\ResponseCode;
+use stdClass;
 
 class HistoryKehamilanController extends Controller
 {
@@ -103,4 +108,72 @@ class HistoryKehamilanController extends Controller
         }
         return $this->success($data,'Berhasil');
     }
+    /**
+     * Data Chart harian history kehamilan
+     * @authenticated
+     * @urlParam uuidKehamilan string required berupa unique id record (uuid) dari kehamilan
+     * @bodyParam start_date date required berupa tanggal awal perhitungan data
+     *
+     * Check that the service is up. If everything is okay, you'll get a 200 OK response.
+     *
+     * Otherwise, the request will fail with a 400 error, and a response listing the failed services.
+     **/
+    public function dailyGraph(String $uuidKehamilan,DailyGraphRequest $request){
+        $kehamilan=Kehamilan::where('uuid',$uuidKehamilan)->first();
+        $history=HistoryKehamilan::where('kehamilan_id',$kehamilan->id)
+                    ->whereBetween(DB::raw("DATE(waktu_pengukuran)"),
+                    [
+                        $request->start_date,
+                        $request->start_date
+                    ])->get();
+        $labels=null;
+        $data=null;
+        foreach($history as $k => $v){
+            $labels[]=$v->waktu_pengukuran;
+            $data[]=$v->jumlah_gerakan_janin;
+        }
+        $output= [
+                    'labels'=>$labels,
+                    'datasets'=>[
+                        (object)['data'=>$data]
+                    ],
+                    'legend'=>['History Kehamilan Harian '.$request->start_date]
+                ];
+        return $output;
+    }
+     /**
+     * Data Chart mingguan history kehamilan
+     * @authenticated
+     * @urlParam uuidKehamilan string required berupa unique id record (uuid) dari kehamilan
+     * @bodyParam start_date date required berupa tanggal awal perhitungan data
+     * @bodyParam end_date date required berupa tanggal akhir perhitungan data
+     *
+     * Check that the service is up. If everything is okay, you'll get a 200 OK response.
+     *
+     * Otherwise, the request will fail with a 400 error, and a response listing the failed services.
+     **/
+    public function weeklyGraph(String $uuidKehamilan,WeeklyGraphRequest $request){
+        $kehamilan=Kehamilan::where('uuid',$uuidKehamilan)->first();
+        $history=HistoryKehamilan::where('kehamilan_id',$kehamilan->id)
+                    ->whereBetween(DB::raw("DATE(waktu_pengukuran)"),
+                    [
+                        $request->start_date,
+                        $request->end_date
+                    ])->get();
+        $labels=null;
+        $data=null;
+        foreach($history as $k => $v){
+            $labels[]=$v->waktu_pengukuran;
+            $data[]=$v->jumlah_gerakan_janin;
+        }
+        $output= [
+                    'labels'=>$labels,
+                    'datasets'=>[
+                        (object)['data'=>$data]
+                    ],
+                    'legend'=>['History Kehamilan Harian '.$request->start_date]
+                ];
+        return $output;
+    }
+
 }

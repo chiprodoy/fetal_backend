@@ -131,6 +131,15 @@
                                     <li class="tocify-item level-2" data-unique="endpoints-GETapi-media-category--slug-">
                         <a href="#endpoints-GETapi-media-category--slug-">Show all POST by kategori</a>
                     </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-POSTapi-graph-daily--uuidKehamilan-">
+                        <a href="#endpoints-POSTapi-graph-daily--uuidKehamilan-">Data Chart harian history kehamilan</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-POSTapi-graph-weekly--uuidKehamilan-">
+                        <a href="#endpoints-POSTapi-graph-weekly--uuidKehamilan-">Data Chart mingguan history kehamilan</a>
+                    </li>
+                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-init-storage">
+                        <a href="#endpoints-GETapi-init-storage">GET api/init/storage</a>
+                    </li>
                                                     </ul>
                             </ul>
         
@@ -143,7 +152,7 @@
                             <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
                     </ul>
         <ul class="toc-footer" id="last-updated">
-        <li>Last updated: August 2 2022</li>
+        <li>Last updated: November 12 2022</li>
     </ul>
 </div>
 
@@ -183,14 +192,15 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"ubbkxyvugrtzopqaefz\",
-    \"email\": \"moksdhkphzhccjzmqzoggkrpeqwwjplwilpxmhfxxkuogbvqeuysesltuupgwmfhbqawlliwrttaoqeszwhmagnvvxdbuqeibuqtzmwdfmecrksewgnbjkjmtlcfezzqhehzazismvkbdlzcdxzwwjndpzohoaynkfpenqihfnkiitdxczvojeypryavqhuqjrwcmbttxhqpevczpaectgifxtzagwotqsfndfifcqtf\",
-    \"password\": \"commodi\",
-    \"tempat_lahir\": \"voluptatibus\",
-    \"tgl_lahir\": \"2022-08-02T22:29:09\",
-    \"pekerjaan\": \"dignissimos\",
-    \"pendidikan\": \"tempore\",
-    \"jumlah_anak\": 42205412
+    \"name\": \"vaagscpwymisinvlrwitlsxmvcbhgrtkjcinfynmsuwqrtyktlkczxhsmprqypmuhbwqovfxmzewujvujmpfsjucefrchfnennmwopqavio\",
+    \"email\": \"wmomcxsfutgz\",
+    \"password\": \"quisquam\",
+    \"tempat_lahir\": \"eveniet\",
+    \"tgl_lahir\": \"2022-11-12T15:07:22\",
+    \"pekerjaan\": \"harum\",
+    \"pendidikan\": \"harum\",
+    \"jumlah_anak\": 1256815.916,
+    \"fcm_token\": \"pariatur\"
 }"
 </code></pre></div>
 
@@ -206,14 +216,15 @@ const headers = {
 };
 
 let body = {
-    "name": "ubbkxyvugrtzopqaefz",
-    "email": "moksdhkphzhccjzmqzoggkrpeqwwjplwilpxmhfxxkuogbvqeuysesltuupgwmfhbqawlliwrttaoqeszwhmagnvvxdbuqeibuqtzmwdfmecrksewgnbjkjmtlcfezzqhehzazismvkbdlzcdxzwwjndpzohoaynkfpenqihfnkiitdxczvojeypryavqhuqjrwcmbttxhqpevczpaectgifxtzagwotqsfndfifcqtf",
-    "password": "commodi",
-    "tempat_lahir": "voluptatibus",
-    "tgl_lahir": "2022-08-02T22:29:09",
-    "pekerjaan": "dignissimos",
-    "pendidikan": "tempore",
-    "jumlah_anak": 42205412
+    "name": "vaagscpwymisinvlrwitlsxmvcbhgrtkjcinfynmsuwqrtyktlkczxhsmprqypmuhbwqovfxmzewujvujmpfsjucefrchfnennmwopqavio",
+    "email": "wmomcxsfutgz",
+    "password": "quisquam",
+    "tempat_lahir": "eveniet",
+    "tgl_lahir": "2022-11-12T15:07:22",
+    "pekerjaan": "harum",
+    "pendidikan": "harum",
+    "jumlah_anak": 1256815.916,
+    "fcm_token": "pariatur"
 };
 
 fetch(url, {
@@ -271,7 +282,7 @@ fetch(url, {
                 <input type="text"
                name="name"
                data-endpoint="POSTapi-register"
-               value="ubbkxyvugrtzopqaefz"
+               value="vaagscpwymisinvlrwitlsxmvcbhgrtkjcinfynmsuwqrtyktlkczxhsmprqypmuhbwqovfxmzewujvujmpfsjucefrchfnennmwopqavio"
                data-component="body" hidden>
     <br>
 <p>Must not be greater than 255 characters.</p>
@@ -281,7 +292,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-register"
-               value="moksdhkphzhccjzmqzoggkrpeqwwjplwilpxmhfxxkuogbvqeuysesltuupgwmfhbqawlliwrttaoqeszwhmagnvvxdbuqeibuqtzmwdfmecrksewgnbjkjmtlcfezzqhehzazismvkbdlzcdxzwwjndpzohoaynkfpenqihfnkiitdxczvojeypryavqhuqjrwcmbttxhqpevczpaectgifxtzagwotqsfndfifcqtf"
+               value="wmomcxsfutgz"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address. Must not be greater than 255 characters.</p>
@@ -291,7 +302,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-register"
-               value="commodi"
+               value="quisquam"
                data-component="body" hidden>
     <br>
 
@@ -301,7 +312,7 @@ fetch(url, {
                 <input type="text"
                name="tempat_lahir"
                data-endpoint="POSTapi-register"
-               value="voluptatibus"
+               value="eveniet"
                data-component="body" hidden>
     <br>
 
@@ -311,7 +322,7 @@ fetch(url, {
                 <input type="text"
                name="tgl_lahir"
                data-endpoint="POSTapi-register"
-               value="2022-08-02T22:29:09"
+               value="2022-11-12T15:07:22"
                data-component="body" hidden>
     <br>
 <p>Must be a valid date.</p>
@@ -321,7 +332,7 @@ fetch(url, {
                 <input type="text"
                name="pekerjaan"
                data-endpoint="POSTapi-register"
-               value="dignissimos"
+               value="harum"
                data-component="body" hidden>
     <br>
 
@@ -331,7 +342,7 @@ fetch(url, {
                 <input type="text"
                name="pendidikan"
                data-endpoint="POSTapi-register"
-               value="tempore"
+               value="harum"
                data-component="body" hidden>
     <br>
 
@@ -341,7 +352,17 @@ fetch(url, {
                 <input type="number"
                name="jumlah_anak"
                data-endpoint="POSTapi-register"
-               value="42205412"
+               value="1256815.916"
+               data-component="body" hidden>
+    <br>
+
+        </p>
+                <p>
+            <b><code>fcm_token</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="fcm_token"
+               data-endpoint="POSTapi-register"
+               value="pariatur"
                data-component="body" hidden>
     <br>
 
@@ -365,8 +386,8 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"quia\",
-    \"password\": \"non\"
+    \"email\": \"ut\",
+    \"password\": \"et\"
 }"
 </code></pre></div>
 
@@ -382,8 +403,8 @@ const headers = {
 };
 
 let body = {
-    "email": "quia",
-    "password": "non"
+    "email": "ut",
+    "password": "et"
 };
 
 fetch(url, {
@@ -441,7 +462,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-login"
-               value="quia"
+               value="ut"
                data-component="body" hidden>
     <br>
 
@@ -451,7 +472,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-login"
-               value="non"
+               value="et"
                data-component="body" hidden>
     <br>
 
@@ -475,7 +496,7 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"jefferey70@example.net\"
+    \"email\": \"ddaniel@example.com\"
 }"
 </code></pre></div>
 
@@ -491,7 +512,7 @@ const headers = {
 };
 
 let body = {
-    "email": "jefferey70@example.net"
+    "email": "ddaniel@example.com"
 };
 
 fetch(url, {
@@ -549,7 +570,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-forgot-password"
-               value="jefferey70@example.net"
+               value="ddaniel@example.com"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -573,9 +594,9 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"token\": \"quis\",
-    \"email\": \"larson.dedrick@example.com\",
-    \"password\": \"eos\"
+    \"token\": \"sunt\",
+    \"email\": \"lou60@example.com\",
+    \"password\": \"error\"
 }"
 </code></pre></div>
 
@@ -591,9 +612,9 @@ const headers = {
 };
 
 let body = {
-    "token": "quis",
-    "email": "larson.dedrick@example.com",
-    "password": "eos"
+    "token": "sunt",
+    "email": "lou60@example.com",
+    "password": "error"
 };
 
 fetch(url, {
@@ -651,7 +672,7 @@ fetch(url, {
                 <input type="text"
                name="token"
                data-endpoint="POSTapi-reset-password"
-               value="quis"
+               value="sunt"
                data-component="body" hidden>
     <br>
 
@@ -661,7 +682,7 @@ fetch(url, {
                 <input type="text"
                name="email"
                data-endpoint="POSTapi-reset-password"
-               value="larson.dedrick@example.com"
+               value="lou60@example.com"
                data-component="body" hidden>
     <br>
 <p>Must be a valid email address.</p>
@@ -671,7 +692,7 @@ fetch(url, {
                 <input type="text"
                name="password"
                data-endpoint="POSTapi-reset-password"
-               value="eos"
+               value="error"
                data-component="body" hidden>
     <br>
 
@@ -827,7 +848,7 @@ access-control-allow-origin: *
         </details>         <pre>
 
 <code class="language-json">{
-    &quot;message&quot;: &quot;Too few arguments to function App\\Http\\Controllers\\PostCategoryController::index(), 0 passed in D:\\~projects\\htdocs\\fetal\\backend\\app\\Http\\Controllers\\PostCategoryController.php on line 37 and exactly 1 expected&quot;,
+    &quot;message&quot;: &quot;Too few arguments to function App\\Http\\Controllers\\PostCategoryController::__index(), 0 passed in D:\\~projects\\htdocs\\fetal\\backend\\app\\Http\\Controllers\\PostCategoryController.php on line 37 and exactly 1 expected&quot;,
     &quot;exception&quot;: &quot;ArgumentCountError&quot;,
     &quot;file&quot;: &quot;D:\\~projects\\htdocs\\fetal\\backend\\vendor\\MF\\ControllerResources.php&quot;,
     &quot;line&quot;: 100,
@@ -1427,14 +1448,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/post/category/aperiam" \
+    --get "http://localhost/api/post/category/ea" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/post/category/aperiam"
+    "http://localhost/api/post/category/ea"
 );
 
 const headers = {
@@ -1511,7 +1532,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="slug"
                data-endpoint="GETapi-post-category--slug-"
-               value="aperiam"
+               value="ea"
                data-component="url" hidden>
     <br>
 <p>The slug of the category.</p>
@@ -1532,14 +1553,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/post/13" \
+    --get "http://localhost/api/post/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/post/13"
+    "http://localhost/api/post/1"
 );
 
 const headers = {
@@ -1616,7 +1637,7 @@ access-control-allow-origin: *
                 <input type="number"
                name="slug"
                data-endpoint="GETapi-post--slug-"
-               value="13"
+               value="1"
                data-component="url" hidden>
     <br>
 <p>The slug of the post.</p>
@@ -1737,8 +1758,8 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"kehamilan_ke\": 18,
-    \"hari_pertama_haid\": \"quo\"
+    \"kehamilan_ke\": 8,
+    \"hari_pertama_haid\": \"aut\"
 }"
 </code></pre></div>
 
@@ -1754,8 +1775,8 @@ const headers = {
 };
 
 let body = {
-    "kehamilan_ke": 18,
-    "hari_pertama_haid": "quo"
+    "kehamilan_ke": 8,
+    "hari_pertama_haid": "aut"
 };
 
 fetch(url, {
@@ -1821,7 +1842,7 @@ fetch(url, {
                 <input type="number"
                name="kehamilan_ke"
                data-endpoint="POSTapi-kehamilan"
-               value="18"
+               value="8"
                data-component="body" hidden>
     <br>
 
@@ -1831,7 +1852,7 @@ fetch(url, {
                 <input type="text"
                name="hari_pertama_haid"
                data-endpoint="POSTapi-kehamilan"
-               value="quo"
+               value="aut"
                data-component="body" hidden>
     <br>
 <p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
@@ -1853,19 +1874,19 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/kehamilan/quaerat" \
+    "http://localhost/api/kehamilan/dolore" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"kehamilan_ke\": 19,
-    \"hari_pertama_haid\": \"suscipit\"
+    \"kehamilan_ke\": 18,
+    \"hari_pertama_haid\": \"ea\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/kehamilan/quaerat"
+    "http://localhost/api/kehamilan/dolore"
 );
 
 const headers = {
@@ -1874,8 +1895,8 @@ const headers = {
 };
 
 let body = {
-    "kehamilan_ke": 19,
-    "hari_pertama_haid": "suscipit"
+    "kehamilan_ke": 18,
+    "hari_pertama_haid": "ea"
 };
 
 fetch(url, {
@@ -1941,7 +1962,7 @@ fetch(url, {
                 <input type="text"
                name="uidKehamilan"
                data-endpoint="PUTapi-kehamilan--uidKehamilan-"
-               value="quaerat"
+               value="dolore"
                data-component="url" hidden>
     <br>
 <p>berupa unique id record (uuid) dari kehamilan</p>
@@ -1952,7 +1973,7 @@ fetch(url, {
                 <input type="number"
                name="kehamilan_ke"
                data-endpoint="PUTapi-kehamilan--uidKehamilan-"
-               value="19"
+               value="18"
                data-component="body" hidden>
     <br>
 
@@ -1962,7 +1983,7 @@ fetch(url, {
                 <input type="text"
                name="hari_pertama_haid"
                data-endpoint="PUTapi-kehamilan--uidKehamilan-"
-               value="suscipit"
+               value="ea"
                data-component="body" hidden>
     <br>
 <p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
@@ -1984,14 +2005,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/kehamilan/veritatis" \
+    "http://localhost/api/kehamilan/atque" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/kehamilan/veritatis"
+    "http://localhost/api/kehamilan/atque"
 );
 
 const headers = {
@@ -2061,7 +2082,7 @@ fetch(url, {
                 <input type="text"
                name="uidKehamilan"
                data-endpoint="DELETEapi-kehamilan--uidKehamilan-"
-               value="veritatis"
+               value="atque"
                data-component="url" hidden>
     <br>
 <p>berupa unique id record (uuid) dari kehamilan</p>
@@ -2083,14 +2104,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/history_kehamilan/eius" \
+    --get "http://localhost/api/history_kehamilan/aspernatur" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/history_kehamilan/eius"
+    "http://localhost/api/history_kehamilan/aspernatur"
 );
 
 const headers = {
@@ -2169,7 +2190,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="uuidKehamilan"
                data-endpoint="GETapi-history_kehamilan--uuidKehamilan-"
-               value="eius"
+               value="aspernatur"
                data-component="url" hidden>
     <br>
 <p>uuid pada record kehamilan</p>
@@ -2191,20 +2212,20 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/history_kehamilan/quisquam" \
+    "http://localhost/api/history_kehamilan/dolorum" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"jumlah_gerakan_janin\": 5,
-    \"waktu_pengukuran\": \"reiciendis\",
-    \"lama_waktu_pengukuran\": 2
+    \"jumlah_gerakan_janin\": 10,
+    \"waktu_pengukuran\": \"fugiat\",
+    \"lama_waktu_pengukuran\": 15
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/history_kehamilan/quisquam"
+    "http://localhost/api/history_kehamilan/dolorum"
 );
 
 const headers = {
@@ -2213,9 +2234,9 @@ const headers = {
 };
 
 let body = {
-    "jumlah_gerakan_janin": 5,
-    "waktu_pengukuran": "reiciendis",
-    "lama_waktu_pengukuran": 2
+    "jumlah_gerakan_janin": 10,
+    "waktu_pengukuran": "fugiat",
+    "lama_waktu_pengukuran": 15
 };
 
 fetch(url, {
@@ -2281,7 +2302,7 @@ fetch(url, {
                 <input type="text"
                name="uuidKehamilan"
                data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
-               value="quisquam"
+               value="dolorum"
                data-component="url" hidden>
     <br>
 <p>uuid pada record kehamilan</p>
@@ -2292,7 +2313,7 @@ fetch(url, {
                 <input type="number"
                name="jumlah_gerakan_janin"
                data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
-               value="5"
+               value="10"
                data-component="body" hidden>
     <br>
 
@@ -2302,7 +2323,7 @@ fetch(url, {
                 <input type="text"
                name="waktu_pengukuran"
                data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
-               value="reiciendis"
+               value="fugiat"
                data-component="body" hidden>
     <br>
 
@@ -2312,7 +2333,7 @@ fetch(url, {
                 <input type="number"
                name="lama_waktu_pengukuran"
                data-endpoint="POSTapi-history_kehamilan--uuidKehamilan-"
-               value="2"
+               value="15"
                data-component="body" hidden>
     <br>
 <p>lama waktu pengukuran dalam satuan detik</p>
@@ -2335,14 +2356,14 @@ fetch(url, {
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/history_kehamilan/16" \
+    "http://localhost/api/history_kehamilan/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/history_kehamilan/16"
+    "http://localhost/api/history_kehamilan/1"
 );
 
 const headers = {
@@ -2412,7 +2433,7 @@ fetch(url, {
                 <input type="number"
                name="uidKehamilan"
                data-endpoint="DELETEapi-history_kehamilan--uidKehamilan-"
-               value="16"
+               value="1"
                data-component="url" hidden>
     <br>
 
@@ -2422,7 +2443,7 @@ fetch(url, {
                 <input type="text"
                name="uuidHistoryKehamilan"
                data-endpoint="DELETEapi-history_kehamilan--uidKehamilan-"
-               value="id"
+               value="ut"
                data-component="url" hidden>
     <br>
 <p>berupa unique id record (uuid) dari history kehamilan</p>
@@ -2540,14 +2561,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/media/sunt" \
+    --get "http://localhost/api/media/non" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/media/sunt"
+    "http://localhost/api/media/non"
 );
 
 const headers = {
@@ -2624,7 +2645,7 @@ access-control-allow-origin: *
                 <input type="text"
                name="slug"
                data-endpoint="GETapi-media--slug-"
-               value="sunt"
+               value="non"
                data-component="url" hidden>
     <br>
 <p>The slug of the medium.</p>
@@ -2645,14 +2666,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/media/category/quo" \
+    --get "http://localhost/api/media/category/et" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/media/category/quo"
+    "http://localhost/api/media/category/et"
 );
 
 const headers = {
@@ -2729,11 +2750,358 @@ access-control-allow-origin: *
                 <input type="text"
                name="slug"
                data-endpoint="GETapi-media-category--slug-"
-               value="quo"
+               value="et"
                data-component="url" hidden>
     <br>
 <p>The slug of the category.</p>
             </p>
+                    </form>
+
+            <h2 id="endpoints-POSTapi-graph-daily--uuidKehamilan-">Data Chart harian history kehamilan</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-graph-daily--uuidKehamilan-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/graph/daily/repudiandae" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"start_date\": \"minima\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/graph/daily/repudiandae"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "start_date": "minima"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-graph-daily--uuidKehamilan-">
+</span>
+<span id="execution-results-POSTapi-graph-daily--uuidKehamilan-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-graph-daily--uuidKehamilan-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-graph-daily--uuidKehamilan-"></code></pre>
+</span>
+<span id="execution-error-POSTapi-graph-daily--uuidKehamilan-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-graph-daily--uuidKehamilan-"></code></pre>
+</span>
+<form id="form-POSTapi-graph-daily--uuidKehamilan-" data-method="POST"
+      data-path="api/graph/daily/{uuidKehamilan}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-graph-daily--uuidKehamilan-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-graph-daily--uuidKehamilan-"
+                    onclick="tryItOut('POSTapi-graph-daily--uuidKehamilan-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-graph-daily--uuidKehamilan-"
+                    onclick="cancelTryOut('POSTapi-graph-daily--uuidKehamilan-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-graph-daily--uuidKehamilan-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/graph/daily/{uuidKehamilan}</code></b>
+        </p>
+                <p>
+            <label id="auth-POSTapi-graph-daily--uuidKehamilan-" hidden>Authorization header:
+                <b><code>Bearer </code></b><input type="text"
+                                                                name="Authorization"
+                                                                data-prefix="Bearer "
+                                                                data-endpoint="POSTapi-graph-daily--uuidKehamilan-"
+                                                                data-component="header"></label>
+        </p>
+                <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>uuidKehamilan</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="uuidKehamilan"
+               data-endpoint="POSTapi-graph-daily--uuidKehamilan-"
+               value="repudiandae"
+               data-component="url" hidden>
+    <br>
+<p>berupa unique id record (uuid) dari kehamilan</p>
+            </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>start_date</code></b>&nbsp;&nbsp;<small>date</small>  &nbsp;
+                <input type="text"
+               name="start_date"
+               data-endpoint="POSTapi-graph-daily--uuidKehamilan-"
+               value="minima"
+               data-component="body" hidden>
+    <br>
+<p>berupa tanggal awal perhitungan data</p>
+<p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
+<p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
+        </p>
+        </form>
+
+            <h2 id="endpoints-POSTapi-graph-weekly--uuidKehamilan-">Data Chart mingguan history kehamilan</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+
+
+<span id="example-requests-POSTapi-graph-weekly--uuidKehamilan-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/graph/weekly/laboriosam" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"start_date\": \"earum\",
+    \"end_date\": \"sunt\"
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/graph/weekly/laboriosam"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "start_date": "earum",
+    "end_date": "sunt"
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-graph-weekly--uuidKehamilan-">
+</span>
+<span id="execution-results-POSTapi-graph-weekly--uuidKehamilan-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-graph-weekly--uuidKehamilan-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-graph-weekly--uuidKehamilan-"></code></pre>
+</span>
+<span id="execution-error-POSTapi-graph-weekly--uuidKehamilan-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-graph-weekly--uuidKehamilan-"></code></pre>
+</span>
+<form id="form-POSTapi-graph-weekly--uuidKehamilan-" data-method="POST"
+      data-path="api/graph/weekly/{uuidKehamilan}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-graph-weekly--uuidKehamilan-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-graph-weekly--uuidKehamilan-"
+                    onclick="tryItOut('POSTapi-graph-weekly--uuidKehamilan-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-graph-weekly--uuidKehamilan-"
+                    onclick="cancelTryOut('POSTapi-graph-weekly--uuidKehamilan-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-graph-weekly--uuidKehamilan-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/graph/weekly/{uuidKehamilan}</code></b>
+        </p>
+                <p>
+            <label id="auth-POSTapi-graph-weekly--uuidKehamilan-" hidden>Authorization header:
+                <b><code>Bearer </code></b><input type="text"
+                                                                name="Authorization"
+                                                                data-prefix="Bearer "
+                                                                data-endpoint="POSTapi-graph-weekly--uuidKehamilan-"
+                                                                data-component="header"></label>
+        </p>
+                <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>uuidKehamilan</code></b>&nbsp;&nbsp;<small>string</small>  &nbsp;
+                <input type="text"
+               name="uuidKehamilan"
+               data-endpoint="POSTapi-graph-weekly--uuidKehamilan-"
+               value="laboriosam"
+               data-component="url" hidden>
+    <br>
+<p>berupa unique id record (uuid) dari kehamilan</p>
+            </p>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <p>
+            <b><code>start_date</code></b>&nbsp;&nbsp;<small>date</small>  &nbsp;
+                <input type="text"
+               name="start_date"
+               data-endpoint="POSTapi-graph-weekly--uuidKehamilan-"
+               value="earum"
+               data-component="body" hidden>
+    <br>
+<p>berupa tanggal awal perhitungan data</p>
+        </p>
+                <p>
+            <b><code>end_date</code></b>&nbsp;&nbsp;<small>date</small>  &nbsp;
+                <input type="text"
+               name="end_date"
+               data-endpoint="POSTapi-graph-weekly--uuidKehamilan-"
+               value="sunt"
+               data-component="body" hidden>
+    <br>
+<p>berupa tanggal akhir perhitungan data</p>
+<p>Check that the service is up. If everything is okay, you'll get a 200 OK response.</p>
+<p>Otherwise, the request will fail with a 400 error, and a response listing the failed services.</p>
+        </p>
+        </form>
+
+            <h2 id="endpoints-GETapi-init-storage">GET api/init/storage</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-init-storage">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/init/storage" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/init/storage"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-init-storage">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">content-type: text/html; charset=UTF-8
+cache-control: no-cache, private
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 54
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json"></code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-init-storage" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-init-storage"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-init-storage"></code></pre>
+</span>
+<span id="execution-error-GETapi-init-storage" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-init-storage"></code></pre>
+</span>
+<form id="form-GETapi-init-storage" data-method="GET"
+      data-path="api/init/storage"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-init-storage', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-init-storage"
+                    onclick="tryItOut('GETapi-init-storage');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-init-storage"
+                    onclick="cancelTryOut('GETapi-init-storage');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-init-storage" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/init/storage</code></b>
+        </p>
                     </form>
 
     

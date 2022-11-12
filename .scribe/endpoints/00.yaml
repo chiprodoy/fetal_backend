@@ -20,57 +20,64 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: ubbkxyvugrtzopqaefz
+        example: vaagscpwymisinvlrwitlsxmvcbhgrtkjcinfynmsuwqrtyktlkczxhsmprqypmuhbwqovfxmzewujvujmpfsjucefrchfnennmwopqavio
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: moksdhkphzhccjzmqzoggkrpeqwwjplwilpxmhfxxkuogbvqeuysesltuupgwmfhbqawlliwrttaoqeszwhmagnvvxdbuqeibuqtzmwdfmecrksewgnbjkjmtlcfezzqhehzazismvkbdlzcdxzwwjndpzohoaynkfpenqihfnkiitdxczvojeypryavqhuqjrwcmbttxhqpevczpaectgifxtzagwotqsfndfifcqtf
+        example: wmomcxsfutgz
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: commodi
+        example: quisquam
         type: string
         custom: []
       tempat_lahir:
         name: tempat_lahir
         description: ''
         required: true
-        example: voluptatibus
+        example: eveniet
         type: string
         custom: []
       tgl_lahir:
         name: tgl_lahir
         description: 'Must be a valid date.'
         required: true
-        example: '2022-08-02T22:29:09'
+        example: '2022-11-12T15:07:22'
         type: string
         custom: []
       pekerjaan:
         name: pekerjaan
         description: ''
         required: true
-        example: dignissimos
+        example: harum
         type: string
         custom: []
       pendidikan:
         name: pendidikan
         description: ''
         required: true
-        example: tempore
+        example: harum
         type: string
         custom: []
       jumlah_anak:
         name: jumlah_anak
         description: ''
         required: true
-        example: 42205412.0
+        example: 1256815.916
         type: number
+        custom: []
+      fcm_token:
+        name: fcm_token
+        description: ''
+        required: true
+        example: pariatur
+        type: string
         custom: []
     responses: []
     responseFields: []
@@ -93,14 +100,14 @@ endpoints:
         name: email
         description: ''
         required: true
-        example: quia
+        example: ut
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: non
+        example: et
         type: string
         custom: []
     responses: []
@@ -124,7 +131,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: jefferey70@example.net
+        example: ddaniel@example.com
         type: string
         custom: []
     responses: []
@@ -148,21 +155,21 @@ endpoints:
         name: token
         description: ''
         required: true
-        example: quis
+        example: sunt
         type: string
         custom: []
       email:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: larson.dedrick@example.com
+        example: lou60@example.com
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: eos
+        example: error
         type: string
         custom: []
     responses: []
@@ -218,7 +225,7 @@ endpoints:
         status: 500
         content: |-
           {
-              "message": "Too few arguments to function App\\Http\\Controllers\\PostCategoryController::index(), 0 passed in D:\\~projects\\htdocs\\fetal\\backend\\app\\Http\\Controllers\\PostCategoryController.php on line 37 and exactly 1 expected",
+              "message": "Too few arguments to function App\\Http\\Controllers\\PostCategoryController::__index(), 0 passed in D:\\~projects\\htdocs\\fetal\\backend\\app\\Http\\Controllers\\PostCategoryController.php on line 37 and exactly 1 expected",
               "exception": "ArgumentCountError",
               "file": "D:\\~projects\\htdocs\\fetal\\backend\\vendor\\MF\\ControllerResources.php",
               "line": 100,
@@ -719,7 +726,7 @@ endpoints:
         name: slug
         description: 'The slug of the category.'
         required: true
-        example: aperiam
+        example: ea
         type: string
         custom: []
     queryParameters: []
@@ -755,7 +762,7 @@ endpoints:
         name: slug
         description: 'The slug of the post.'
         required: true
-        example: 13
+        example: 1
         type: integer
         custom: []
     queryParameters: []
@@ -818,7 +825,7 @@ endpoints:
         name: kehamilan_ke
         description: ''
         required: true
-        example: 18
+        example: 8
         type: integer
         custom: []
       hari_pertama_haid:
@@ -828,7 +835,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: quo
+        example: aut
         type: date
         custom: []
     responses: []
@@ -850,7 +857,7 @@ endpoints:
         name: uidKehamilan
         description: 'berupa unique id record (uuid) dari kehamilan'
         required: true
-        example: quaerat
+        example: dolore
         type: string
         custom: []
     queryParameters: []
@@ -859,7 +866,7 @@ endpoints:
         name: kehamilan_ke
         description: ''
         required: true
-        example: 19
+        example: 18
         type: integer
         custom: []
       hari_pertama_haid:
@@ -869,7 +876,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: suscipit
+        example: ea
         type: date
         custom: []
     responses: []
@@ -896,7 +903,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: veritatis
+        example: atque
         type: string
         custom: []
     queryParameters: []
@@ -923,7 +930,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: eius
+        example: aspernatur
         type: string
         custom: []
     queryParameters: []
@@ -955,7 +962,7 @@ endpoints:
         name: uuidKehamilan
         description: 'uuid pada record kehamilan'
         required: true
-        example: quisquam
+        example: dolorum
         type: string
         custom: []
     queryParameters: []
@@ -964,14 +971,14 @@ endpoints:
         name: jumlah_gerakan_janin
         description: ''
         required: true
-        example: 5
+        example: 10
         type: integer
         custom: []
       waktu_pengukuran:
         name: waktu_pengukuran
         description: ''
         required: true
-        example: reiciendis
+        example: fugiat
         type: date
         custom: []
       lama_waktu_pengukuran:
@@ -983,7 +990,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: 2
+        example: 15
         type: integer
         custom: []
     responses: []
@@ -1005,7 +1012,7 @@ endpoints:
         name: uidKehamilan
         description: ''
         required: true
-        example: 16
+        example: 1
         type: integer
         custom: []
       uuidHistoryKehamilan:
@@ -1017,7 +1024,7 @@ endpoints:
 
           Otherwise, the request will fail with a 400 error, and a response listing the failed services.
         required: true
-        example: id
+        example: ut
         type: string
         custom: []
     queryParameters: []
@@ -1069,7 +1076,7 @@ endpoints:
         name: slug
         description: 'The slug of the medium.'
         required: true
-        example: sunt
+        example: non
         type: string
         custom: []
     queryParameters: []
@@ -1105,7 +1112,7 @@ endpoints:
         name: slug
         description: 'The slug of the category.'
         required: true
-        example: quo
+        example: et
         type: string
         custom: []
     queryParameters: []
@@ -1118,6 +1125,112 @@ endpoints:
           cache-control: 'no-cache, private'
           x-ratelimit-limit: '60'
           x-ratelimit-remaining: '57'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/graph/daily/{uuidKehamilan}'
+    metadata:
+      title: 'Data Chart harian history kehamilan'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      uuidKehamilan:
+        name: uuidKehamilan
+        description: 'berupa unique id record (uuid) dari kehamilan'
+        required: true
+        example: repudiandae
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      start_date:
+        name: start_date
+        description: |-
+          berupa tanggal awal perhitungan data
+
+          Check that the service is up. If everything is okay, you'll get a 200 OK response.
+
+          Otherwise, the request will fail with a 400 error, and a response listing the failed services.
+        required: true
+        example: minima
+        type: date
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/graph/weekly/{uuidKehamilan}'
+    metadata:
+      title: 'Data Chart mingguan history kehamilan'
+      description: ''
+      authenticated: true
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      uuidKehamilan:
+        name: uuidKehamilan
+        description: 'berupa unique id record (uuid) dari kehamilan'
+        required: true
+        example: laboriosam
+        type: string
+        custom: []
+    queryParameters: []
+    bodyParameters:
+      start_date:
+        name: start_date
+        description: 'berupa tanggal awal perhitungan data'
+        required: true
+        example: earum
+        type: date
+        custom: []
+      end_date:
+        name: end_date
+        description: |-
+          berupa tanggal akhir perhitungan data
+
+          Check that the service is up. If everything is okay, you'll get a 200 OK response.
+
+          Otherwise, the request will fail with a 400 error, and a response listing the failed services.
+        required: true
+        example: sunt
+        type: date
+        custom: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/init/storage
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '54'
           access-control-allow-origin: '*'
         description: null
     responseFields: []

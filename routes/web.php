@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FileController;
 use App\Http\Controllers\KehamilanController;
+use App\Http\Controllers\NotificationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,4 +27,8 @@ Route::get('/dashboard', function () {
 Route::get('file/{slug}',[FileController::class,'show'])->name('file.show');
 Route::resource('/kehamilan',KehamilanController::class);
 
+Route::prefix('admin')->middleware('auth')->group(function(){
+    Route::get('notification/test',[NotificationController::class,'test'])->name('notification.test');
+    Route::post('notification/test',[NotificationController::class,'send'])->name('notification.send');
+});
 require __DIR__.'/auth.php';

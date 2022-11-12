@@ -47,6 +47,9 @@ class RegisteredUserController extends Controller
                 'pekerjaan',
                 'pendidikan',
                 'jumlah_anak',
+                'fcm_token',
+                'channel',
+                'token'
 
         ]);
         DB::beginTransaction();
@@ -61,12 +64,13 @@ class RegisteredUserController extends Controller
                     'pekerjaan'=>$validated['pekerjaan'],
                     'pendidikan'=>$validated['pendidikan'],
                     'jumlah_anak'=>$validated['jumlah_anak'],
-                    'uid'=>''
+                    'uid'=>'',
+                    'fcm_token'=>$validated['fcm_token'],
                 ]
                 );
 
             $user->roles()->attach(2,['user_modify'=>'su']);
-
+            $user->user_notification_channel()->create(['channel'=>$request->channel,'token'=>$request->token]);
             event(new Registered($user));
 
         }catch(Exception $e){

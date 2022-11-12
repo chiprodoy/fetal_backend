@@ -38,7 +38,8 @@ class RegisterUserRequest extends FormRequest
                 'tgl_lahir'=> ['required','date'],
                 'pekerjaan'=> ['required','string',],
                 'pendidikan'=> ['required','string',],
-                'jumlah_anak'=> ['required','numeric']
+                'jumlah_anak'=> ['required','numeric'],
+                'fcm_token'=>['required','string']
         ];
     }
 

@@ -96,6 +96,12 @@ Route::prefix('history_kehamilan')->middleware('auth:sanctum')->group(function()
 
 });
 
+Route::prefix('graph')->middleware('auth:sanctum')->group(function(){
+    Route::post('daily/{uuidKehamilan}',[HistoryKehamilanController::class,'dailyGraph']);
+    Route::post('weekly/{uuidKehamilan}',[HistoryKehamilanController::class,'weeklyGraph']);
+
+});
+
 Route::prefix('post_category')->group(function(){
     Route::get('/',[PostCategoryController::class,'index'])->name('post_category.index');
 });

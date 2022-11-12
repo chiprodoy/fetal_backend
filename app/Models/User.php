@@ -28,7 +28,8 @@ class User extends Authenticatable implements MustVerifyEmail
         'pekerjaan',
         'pendidikan',
         'jumlah_anak',
-        'uid'
+        'uid',
+        'fcm_token'
     ];
 
     /**
@@ -39,6 +40,7 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $hidden = [
         'password',
         'remember_token',
+        'fcm_token'
     ];
 
     /**
@@ -93,6 +95,23 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->hasMany(Kehamilan::class);
     }
 
+    /**
+     * Get the kehamilan relation
+     */
+    public function user_notification_channel()
+    {
+        return $this->hasMany(UserNotificationChannel::class);
+    }
+
+    /**
+     * Specifies the user's FCM tokens
+     *
+     * @return string|array
+     */
+    public function routeNotificationForFcm()
+    {
+        return $this->getDeviceTokens();
+    }
     /**
      * Get the kehamilan relation
      */
