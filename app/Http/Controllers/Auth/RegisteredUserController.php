@@ -47,7 +47,7 @@ class RegisteredUserController extends Controller
                 'pekerjaan',
                 'pendidikan',
                 'jumlah_anak',
-                'fcm_token',
+              //  'fcm_token',
                 'channel',
                 'token'
 

@@ -29,7 +29,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'pendidikan',
         'jumlah_anak',
         'uid',
-        'fcm_token'
+       // 'fcm_token'
     ];
 
     /**
@@ -40,7 +40,7 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $hidden = [
         'password',
         'remember_token',
-        'fcm_token'
+       // 'fcm_token'
     ];
 
     /**
