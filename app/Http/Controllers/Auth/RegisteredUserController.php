@@ -65,12 +65,12 @@ class RegisteredUserController extends Controller
                     'pendidikan'=>$validated['pendidikan'],
                     'jumlah_anak'=>$validated['jumlah_anak'],
                     'uid'=>'',
-                    'fcm_token'=>$validated['fcm_token'],
+                   // 'fcm_token'=>$validated['fcm_token'],
                 ]
                 );
 
             $user->roles()->attach(2,['user_modify'=>'su']);
-            $user->user_notification_channel()->create(['channel'=>$request->channel,'token'=>$request->token]);
+           // $user->user_notification_channel()->create(['channel'=>$request->channel,'token'=>$request->token]);
             event(new Registered($user));
 
         }catch(Exception $e){

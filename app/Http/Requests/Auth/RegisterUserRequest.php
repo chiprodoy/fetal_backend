@@ -39,7 +39,7 @@ class RegisterUserRequest extends FormRequest
                 'pekerjaan'=> ['required','string',],
                 'pendidikan'=> ['required','string',],
                 'jumlah_anak'=> ['required','numeric'],
-                'fcm_token'=>['required','string']
+               // 'fcm_token'=>['required','string']
         ];
     }
 
